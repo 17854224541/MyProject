@@ -1,0 +1,337 @@
+@charset "utf-8";
+.hose {
+	width: 1058px;
+	height: 655px;
+	border: 6px solid #231815;
+	border-radius: 10px;
+	margin: 30px auto;
+}
+
+.part-1 {
+	position: absolute;
+	width: 922px;
+	height: 495px;
+	top: 65px;
+	left: 55px;
+	border-width: 4px;
+	border-style: solid;
+}
+
+.part-1 .wire-1 {
+	position: absolute;
+	left: 0;
+	bottom: 95px;
+	width: 914px;
+	height: 4px;
+}
+
+.light-off .wire-1 {
+	background-color: #716866;
+}
+
+.light-on .wire-1 {
+	background-color: #F78A06;
+}
+
+.part-1 .light-1 {
+	top: -32px;
+	left: -34px;
+}
+
+.part-1 .light-2 {
+	top: -32px;
+	left: 95px;
+}
+
+.part-1 .light-3 {
+	top: -32px;
+	left: 225px;
+}
+
+.part-1 .light-4 {
+	top: -32px;
+	left: 360px;
+}
+
+.part-1 .light-5 {
+	top: -32px;
+	right: 360px;
+}
+
+.part-1 .light-6 {
+	top: -32px;
+	right: 225px;
+}
+
+.part-1 .light-7 {
+	top: -32px;
+	right: 95px;
+}
+
+.part-1 .light-8 {
+	top: -32px;
+	right: -34px;
+}
+
+.part-1 .light-9 {
+	top: 66px;
+	left: -34px;
+}
+
+.part-1 .light-10 {
+	top: 66px;
+	right: -34px;
+}
+
+.part-1 .light-11 {
+	top: 164px;
+	left: -34px;
+}
+
+.part-1 .light-12 {
+	top: 164px;
+	right: -34px;
+}
+
+.part-1 .light-13 {
+	top: 262px;
+	left: -34px;
+}
+
+.part-1 .light-14 {
+	top: 262px;
+	right: -34px;
+}
+
+.part-1 .light-15 {
+	top: 360px;
+	left: -34px;
+}
+
+.part-1 .light-16 {
+	top: 360px;
+	left: 95px;
+}
+
+.part-1 .light-17 {
+	top: 360px;
+	left: 225px;
+}
+
+.part-1 .light-18 {
+	top: 360px;
+	left: 360px;
+}
+
+.part-1 .light-19 {
+	top: 360px;
+	right: 360px;
+}
+
+.part-1 .light-20 {
+	top: 360px;
+	right: 225px;
+}
+
+.part-1 .light-21 {
+	top: 360px;
+	right: 95px;
+}
+
+.part-1 .light-22 {
+	top: 360px;
+	right: -34px;
+}
+
+.part-1 .light-23 {
+	bottom: -34px;
+	left: -34px;
+}
+
+.part-1 .light-24 {
+	bottom: -34px;
+	left: 95px;
+}
+
+.part-1 .light-25 {
+	bottom: -34px;
+	left: 225px;
+}
+
+.part-1 .light-26 {
+	bottom: -34px;
+	left: 360px;
+}
+
+.part-1 .light-27 {
+	bottom: -34px;
+	right: 360px;
+}
+
+.part-1 .light-28 {
+	bottom: -34px;
+	right: 225px;
+}
+
+.part-1 .light-29 {
+	bottom: -34px;
+	right: 95px;
+}
+
+.part-1 .light-30 {
+	bottom: -34px;
+	right: -34px;
+}
+
+.part-2 {
+	position: absolute;
+	width: 32px;
+	height: 220px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	top: 160px;
+	left: 226px;
+}
+
+.part-2 .light-1 {
+	top: -32px;
+	left: -34px;
+}
+
+.part-2 .light-2 {
+	bottom: -32px;
+	left: -32px;
+}
+
+.part-3 {
+	position: absolute;
+	width: 32px;
+	height: 220px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	top: 160px;
+	left: 352px;
+}
+
+.part-3 .light-1 {
+	top: -32px;
+	left: -34px;
+}
+
+.part-3 .light-2 {
+	bottom: -32px;
+	left: -32px;
+}
+
+.part-4 {
+	position: absolute;
+	width: 32px;
+	height: 220px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	top: 160px;
+	left: 488px;
+}
+
+.part-4 .light-1 {
+	top: -32px;
+	left: -34px;
+}
+
+.part-4 .light-2 {
+	bottom: -32px;
+	left: -32px;
+}
+
+.part-5 {
+	position: absolute;
+	width: 32px;
+	height: 220px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	top: 160px;
+	right: 352px;
+}
+
+.part-5 .light-1 {
+	top: -32px;
+	left: -34px;
+}
+
+.part-5 .light-2 {
+	bottom: -32px;
+	left: -32px;
+}
+
+.part-6 {
+	position: absolute;
+	width: 32px;
+	height: 220px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	top: 160px;
+	right: 226px;
+}
+
+.part-6 .light-1 {
+	top: -32px;
+	left: -34px;
+}
+
+.part-6 .light-2 {
+	bottom: -32px;
+	left: -32px;
+}
+
+
+/*投影仪*/
+
+.projector {
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	top: 236px;
+	left: 550px;
+}
+
+
+/*窗帘*/
+
+.curtain-1 {
+	bottom: -35px;
+	left: 30px;
+}
+
+.curtain-2 {
+	bottom: -35px;
+	left: 160px;
+}
+
+.curtain-3 {
+	bottom: -35px;
+	left: 290px;
+}
+
+.curtain-4 {
+	bottom: -35px;
+	left: 422px;
+}
+
+.curtain-5 {
+	bottom: -35px;
+	right: 422px;
+}
+
+.curtain-6 {
+	bottom: -35px;
+	right: 290px;
+}
+.curtain-7 {
+	bottom: -35px;
+	right: 160px;
+}
+
+.curtain-8 {
+	bottom: -35px;
+	right: 30px;
+}

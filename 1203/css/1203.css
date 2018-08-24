@@ -1,0 +1,157 @@
+@charset "utf-8";
+.hose{
+	width: 822px;
+	height: 618px;
+	border: 6px solid #231815;
+	border-radius: 5px;
+	margin: 20px auto;
+}
+.part-1{
+	position: absolute;
+	width: 604px;
+	height: 440px;
+	top: 80px;
+	left: 95px;
+	border-width: 4px;
+	border-style: solid;
+}
+.part-1 .light-1{
+	top: -32px;
+	left: -32px;
+}
+.part-1 .light-2{
+	top: -32px;
+	left: 119px;
+}
+.part-1 .light-3{
+	top: -32px;
+	left: 270px;
+}
+.part-1 .light-4{
+	top: -32px;
+	right: 119px;
+}
+.part-1 .light-5{
+	top: -32px;
+	right: -32px;
+}
+.part-1 .light-6{
+	top: 78px;
+	right: -32px;
+}
+.part-1 .light-7{
+	top: 188px;
+	right: -34px;
+}
+.part-1 .light-8{
+	bottom: 78px;
+	right: -34px;
+}
+.part-1 .light-9{
+	bottom: -34px;
+	right: -34px;
+}
+.part-1 .light-10{
+	bottom: -34px;
+	right: 119px;
+}
+.part-1 .light-11{
+	bottom: -32px;
+	left: 270px;
+}
+.part-1 .light-12{
+	bottom: -34px;
+	left: 119px;
+}
+.part-1 .light-13{
+	bottom: -34px;
+	left: -34px;
+}
+.part-1 .light-14{
+	bottom: 78px;
+	left: -34px;
+}
+.part-1 .light-15{
+	top: 188px;
+	left: -34px;
+}
+.part-1 .light-16{
+	top: 78px;
+	left: -34px;
+}
+.part-2{
+	position: absolute;
+	width: 32px;
+	height: 220px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	top: 200px;
+	left: 170px;
+}
+.part-2 .light-1{
+	top: -32px;
+	left: -34px;
+}
+.part-2 .light-2{
+	bottom: -32px;
+	left: -32px;
+}
+.part-3{
+	position: absolute;
+	width: 32px;
+	height: 220px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	top: 200px;
+	left: 410px;
+}
+.part-3 .light-1{
+	top: -32px;
+	left: -34px;
+}
+.part-3 .light-2{
+	bottom: -32px;
+	left: -32px;
+}
+.part-4{
+	position: absolute;
+	width: 32px;
+	height: 220px;
+	border-left-width: 4px;
+	border-left-style: solid;
+	top: 200px;
+	right: 230px;
+}
+.part-4 .light-1{
+	top: -32px;
+	left: -34px;
+}
+.part-4 .light-2{
+	bottom: -32px;
+	left: -32px;
+}
+/*窗帘*/
+.curtain-1{
+	top: 150px;
+	right: -35px;
+}
+.curtain-2{
+	top: 330px;
+	right: -35px;
+}
+.curtain-3{
+	bottom: -35px;
+	right: 115px;
+}
+.curtain-4{
+	bottom: -35px;
+	right: 305px;
+}
+.curtain-5{
+	bottom: -35px;
+	left: 265px;
+}
+.curtain-6{
+	bottom: -35px;
+	left: 66px;
+}

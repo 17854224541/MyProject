@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/publice.css" />
+		<link rel="stylesheet" type="text/css" href="css/1203.css" />
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="box clearfix">
+			<!--left-->
+			<div class="left">
+				<h1>1203</h1>
+				<div class="menu">
+					<ul>
+						<li class="clearfix huike">
+							<img class="fl" src="img/icon-huike.png" />
+							<h2 class="fl">会客</h2>
+						</li>
+						<li class="clearfix huiyi">
+							<img class="fl" src="img/icon-huiyi.png" />
+							<h2 class="fl">会议</h2>
+						</li>
+						<li class="clearfix touying">
+							<img class="fl" src="img/icon-projector-on.png" />
+							<h2 class="fl">投影</h2>
+						</li>
+						<li class="clearfix yule">
+							<img class="fl" src="img/icon-yule.png" />
+							<h2 class="fl">娱乐</h2>
+						</li>
+						<div class="line"></div>
+						<li class="clearfix btn-kongtiao">
+							<img class="fl" src="img/icon-kongtiao1.png" />
+							<h3 class="fl">空调</h3>
+						</li>
+						<li class="clearfix btn-light">
+							<img class="fl" src="img/icon-light1-on.png" />
+							<h3 class="fl">灯</h3>
+						</li>
+						<li class="clearfix btn-curtain">
+							<img class="fl" src="img/icon-curtain-on.png" />
+							<h3 class="fl">窗帘</h3>
+						</li>
+					</ul>
+				</div>
+				<div class="more">
+					<img src="img/icon-more.png" />
+				</div>
+			</div>
+			<!--right-->
+			<div class="right">
+				<div class="hose relative">
+					<!--灯-->
+					<div class="light-box part-1 light-off">
+						<input type="hidden" name="" id="" value="off" />
+						<div class="switch light light1 light-1"></div>
+						<div class="switch light light1 light-2"></div>
+						<div class="switch light light1 light-3"></div>
+						<div class="switch light light1 light-4"></div>
+						<div class="switch light light1 light-5"></div>
+						<div class="switch light light1 light-6"></div>
+						<div class="switch light light1 light-7"></div>
+						<div class="switch light light1 light-8"></div>
+						<div class="switch light light1 light-9"></div>
+						<div class="switch light light1 light-10"></div>
+						<div class="switch light light1 light-11"></div>
+						<div class="switch light light1 light-12"></div>
+						<div class="switch light light1 light-13"></div>
+						<div class="switch light light1 light-14"></div>
+						<div class="switch light light1 light-15"></div>
+						<div class="switch light light1 light-16"></div>
+					</div>
+					<div class="light-box part-2 light-off">
+						<input type="hidden" name="" id="" value="off" />
+						<div class="switch light light2 light-1"></div>
+						<div class="switch light light2 light-2"></div>
+					</div>
+					<div class="light-box part-3 light-off">
+						<input type="hidden" name="" id="" value="off" />
+						<div class="switch light light2 light-1"></div>
+						<div class="switch light light2 light-2"></div>
+					</div>
+					<div class="light-box part-4 light-off">
+						<input type="hidden" name="" id="" value="off" />
+						<div class="switch light light2 light-1"></div>
+						<div class="switch light light2 light-2"></div>
+					</div>
+					<!--投影仪-->
+					<div class="switch projector projector-off">
+						<input type="hidden" name="" id="" value="off" />
+					</div>
+					<!--窗帘-->
+					<div class="switch curtain curtain-1 curtain-off">
+						<input type="hidden" name="" id="" value="0" />
+					</div>
+					<div class="switch curtain curtain-2 curtain-off">
+						<input type="hidden" name="" id="" value="0" />
+					</div>
+					<div class="switch curtain curtain-3 curtain-off">
+						<input type="hidden" name="" id="" value="0" />
+					</div>
+					<div class="switch curtain curtain-4 curtain-off">
+						<input type="hidden" name="" id="" value="0" />
+					</div>
+					<div class="switch curtain curtain-5 curtain-off">
+						<input type="hidden" name="" id="" value="0" />
+					</div>
+					<div class="switch curtain curtain-6 curtain-off">
+						<input type="hidden" name="" id="" value="0" />
+					</div>
+				</div>
+			</div>
+			<!--窗帘弹窗-->
+			<div class="zhezhao1">
+				<div class="popup1">
+					<div class="icon-curtain relative">
+						<img class="tran1" src="img/icon-lian.png" />
+					</div>
+					<div class="progress">
+						<div class="progress-bar tran1 progress-bar-success relative" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+							<div class="dian"></div>
+							<div class="kuang">0%</div>
+						</div>
+					</div>
+					<div class="bottom clearfix">
+						<button class="fl c-btn c-btn-on">开</button>
+						<button class="fl c-btn c-btn-stop">暂停</button>
+						<button class="fl c-btn c-btn-off">关</button>
+					</div>
+				</div>
+			</div>
+			<!--空调弹窗-->
+			<div class="zhezhao2">
+				<div class="popup2">
+					<div class="t-box fl">
+						<h2>室内温度</h2>
+						<h1 class="clearfix">
+							<p class="fl">20</p>
+							<div class="fl">
+								<i class="danwei">℃</i>
+								<img class="moshi-img" src="img/icon-zhileng-s.png"/>
+							</div>
+						</h1>
+					</div>
+					<div class="data-box fl">
+						<ul>
+							<li class="clearfix">
+								<div class="fl">
+									设定
+								</div>
+								<div class="fl">
+									<i id="t-num">20</i>
+									<i>℃</i>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="fl">
+									风速
+								</div>
+								<div class="fengsu-text fl">
+									大风
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="fl">
+									温湿度
+								</div>
+								<div class="fl">
+									<i>20</i><span>RFH</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<!--按钮-->
+					<div class="btn-box">
+						<ul class="clearfix">
+							<li class="fl">
+								<button class="icon-btn a-btn-jian">
+									<img src="img/icon-jian.png" />
+								</button>
+							</li>
+							<li class="fl">
+								<button class="icon-btn a-btn-ls">
+									<img src="img/icon-ls-on.png" />
+									<input type="hidden" value="on" />
+								</button>
+								<h1>锁屏</h1>
+							</li>
+							<li class="fl">
+								<button class="icon-btn a-btn-jia">
+									<img src="img/icon-jia.png" />
+								</button>
+							</li>
+						</ul>
+						<ul class="clearfix">
+							<li class="fl">
+								<button class="icon-btn a-btn-power">
+									<img src="img/icon-power.png" />
+									<input type="hidden" value="on" />
+								</button>
+								<h1>开</h1>
+							</li>
+							<li class="fl">
+								<button class="icon-btn a-btn-fengsu">
+									<img src="img/icon-fengsu-dafeng.png" />
+									<input type="hidden" value="大风" />
+								</button>
+								<h1>风速</h1>
+							</li>
+							<li class="fl">
+								<button class="icon-btn a-btn-moshi">
+									<img src="img/icon-moshi.png" />
+									<input type="hidden" value="制冷" />
+								</button>
+								<h1>模式</h1>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/myjs.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
