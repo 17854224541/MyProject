@@ -68,7 +68,7 @@ li {
 
 .left .menu {
 	height: 472px;
-	overflow: hidden;
+	overflow: scroll;
 	position: relative;
 }
 

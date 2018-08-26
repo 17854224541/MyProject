@@ -6,6 +6,7 @@ $(document).ready(function() {
 	})
 	//会客
 	$(".huike").click(function() {
+		$(".switch").css("display","block");
 		//投影仪关
 		projectoroff($(".projector"));
 		//灯开
@@ -14,6 +15,7 @@ $(document).ready(function() {
 	})
 	//会议
 	$(".huiyi").click(function() {
+		$(".switch").css("display","block");
 		//投影仪关
 		projectoroff($(".projector"));
 		//灯开
@@ -22,6 +24,7 @@ $(document).ready(function() {
 	})
 	//投影
 	$(".touying").click(function() {
+		$(".switch").css("display","block");
 		//投影仪开
 		projectoron($(".projector"));
 		//灯
@@ -31,12 +34,23 @@ $(document).ready(function() {
 	})
 	//娱乐
 	$(".yule").click(function() {
+		$(".switch").css("display","block");
 		//投影仪开
 		projectoron($(".projector"));
 		//灯
 		lightoff($(".light"))
 		lighton($(".part-4 .light"))
 		//窗帘关
+	})
+	//灯
+	$(".btn-light").click(function () {
+		$(".switch").css("display","none");
+		$(".light").css("display","block");
+	})
+	//窗帘
+	$(".btn-curtain").click(function () {
+		$(".switch").css("display","none");
+		$(".curtain").css("display","block");
 	})
 	//right
 
@@ -92,8 +106,8 @@ $(document).ready(function() {
 	})
 	//窗帘开关
 	function curtainswitch(curtain) {
-		var ca = curtain.find("input").val();
-		ca = parseInt(ca);
+		var oca = curtain.find("input").val();
+		ca = parseInt(oca);
 		//百分比
 		$(".kuang").html(ca + "%");
 		//进度条
@@ -221,6 +235,7 @@ $(document).ready(function() {
 	})
 	//点击空调开关
 	$(".btn-kongtiao").click(function() {
+		$(".switch").css("display","block");
 		$(".zhezhao2").css("display", "block");
 		$(".popup2").css("display", "block");
 		//点击空白处关闭
