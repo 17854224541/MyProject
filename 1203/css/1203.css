@@ -2,9 +2,10 @@
 .hose{
 	width: 822px;
 	height: 618px;
-	border: 6px solid #231815;
-	border-radius: 5px;
 	margin: 20px auto;
+	background-image: url(../img/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .part-1{
 	position: absolute;
@@ -132,26 +133,26 @@
 }
 /*窗帘*/
 .curtain-1{
-	top: 150px;
-	right: -35px;
+	top: 130px;
+	right: -30px;
 }
 .curtain-2{
-	top: 330px;
-	right: -35px;
+	top: 294px;
+	right: -30px;
 }
 .curtain-3{
-	bottom: -35px;
-	right: 115px;
+	bottom: -25px;
+	right: 131px;
 }
 .curtain-4{
-	bottom: -35px;
-	right: 305px;
+	bottom: -25px;
+	right: 306px;
 }
 .curtain-5{
-	bottom: -35px;
-	left: 265px;
+	bottom: -25px;
+	left: 277px;
 }
 .curtain-6{
-	bottom: -35px;
-	left: 66px;
+	bottom: -25px;
+	left: 104px;
 }

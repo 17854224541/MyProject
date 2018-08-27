@@ -36,7 +36,6 @@ li {
 .box {
 	width: 1280px;
 	height: 747px;
-	/*background: url(../img/1203_03.png) no-repeat;*/
 	padding: 30px;
 	box-sizing: border-box;
 }
@@ -68,7 +67,7 @@ li {
 
 .left .menu {
 	height: 472px;
-	overflow: scroll;
+	overflow: hidden;
 	position: relative;
 }
 
@@ -113,16 +112,23 @@ li {
 	height: 64px;
 }
 
-.left .more {
+.left .more-top {
 	text-align: center;
-	padding-top: 15px;
+	transform: rotateZ(180deg);
 }
 
-.left .more img {
+.left .more-top img {
 	width: 31px;
 	height: 31px;
 }
+.left .more-btm {
+	text-align: center;
+}
 
+.left .more-btm img {
+	width: 31px;
+	height: 31px;
+}
 .right {
 	float: right;
 	width: 1116px;
@@ -136,12 +142,7 @@ li {
 	position: relative;
 }
 
-
 /*开关*/
-
-.switch {
-	transform-style: preserve-3d;
-}
 
 .down {
 	animation: down 1000ms ease-in-out;

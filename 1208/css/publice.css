@@ -36,7 +36,6 @@ li {
 .box {
 	width: 1280px;
 	height: 747px;
-	/*background: url(../img/1203_03.png) no-repeat;*/
 	box-sizing: border-box;
 }
 
@@ -136,10 +135,6 @@ li {
 
 
 /*开关*/
-
-.switch {
-	transform-style: preserve-3d;
-}
 
 .down {
 	animation: down 1000ms ease-in-out;
