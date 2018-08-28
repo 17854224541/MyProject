@@ -154,6 +154,9 @@ $(document).ready(function() {
 		$(".popup1").eq(index).find(".popup1 .icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
 		//开
 		$(".popup1").eq(index).find(".c-btn-on").click(function() {
+			if (t1) {
+				clearInterval(t1);
+			}
 			//该按钮禁用，其他按钮启用
 			$(".popup1").eq(index).find(".c-btn-stop")[0].disabled = false;
 			$(".popup1").eq(index).find(".c-btn-off")[0].disabled = false;
@@ -184,6 +187,9 @@ $(document).ready(function() {
 		})
 		//关
 		$(".popup1").eq(index).find(".c-btn-off").click(function() {
+			if (t1) {
+				clearInterval(t1);
+			}
 			//该按钮禁用，其他按钮启用
 			$(".popup1").eq(index).find(".c-btn-on")[0].disabled = false;
 			$(".popup1").eq(index).find(".c-btn-stop")[0].disabled = false;
