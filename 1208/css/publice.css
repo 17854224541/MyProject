@@ -480,7 +480,9 @@ li {
 	border: 0;
 	border-radius: 50%;
 }
-
+.popup2 .btn-box li .icon-btn img{
+	width: 100%;
+}
 .popup2 .btn-box li h1 {
 	margin: 0;
 	font-size: .16rem;
