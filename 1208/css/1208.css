@@ -1,8 +1,18 @@
 @charset "utf-8";
+@media only screen and (min-width:1024px ) {
+	html{
+		font-size: 80px;
+	}
+}
+@media only screen and (min-width:1280px ) {
+	html{
+		font-size: 100px;
+	}
+}
 .hose {
-	width: 1058px;
-	height: 655px;
-	margin: 30px auto;
+	width: 10.58rem;
+	height: 6.55rem;
+	margin: .30rem auto;
 	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -10,20 +20,20 @@
 
 .part-1 {
 	position: absolute;
-	width: 922px;
-	height: 495px;
-	top: 70px;
-	left: 55px;
-	border-width: 4px;
+	width: 9.22rem;
+	height: 4.95rem;
+	top: .70rem;
+	left: .55rem;
+	border-width: .04rem;
 	border-style: solid;
 }
 
 .part-1 .wire-1 {
 	position: absolute;
 	left: 0;
-	bottom: 95px;
-	width: 914px;
-	height: 4px;
+	bottom: .95rem;
+	width: 9.14rem;
+	height: .04rem;
 }
 
 .light-off .wire-1 {
@@ -35,253 +45,253 @@
 }
 
 .part-1 .light-1 {
-	top: -32px;
-	left: -34px;
+	top: -.32rem;
+	left: -.34rem;
 }
 
 .part-1 .light-2 {
-	top: -32px;
-	left: 95px;
+	top: -.32rem;
+	left: .95rem;
 }
 
 .part-1 .light-3 {
-	top: -32px;
-	left: 225px;
+	top: -.32rem;
+	left: 2.25rem;
 }
 
 .part-1 .light-4 {
-	top: -32px;
-	left: 360px;
+	top: -.32rem;
+	left: 3.60rem;
 }
 
 .part-1 .light-5 {
-	top: -32px;
-	right: 360px;
+	top: -.32rem;
+	right: 3.60rem;
 }
 
 .part-1 .light-6 {
-	top: -32px;
-	right: 225px;
+	top: -.32rem;
+	right: 2.25rem;
 }
 
 .part-1 .light-7 {
-	top: -32px;
-	right: 95px;
+	top: -.32rem;
+	right: .95rem;
 }
 
 .part-1 .light-8 {
-	top: -32px;
-	right: -34px;
+	top: -.32rem;
+	right: -.34rem;
 }
 
 .part-1 .light-9 {
-	top: 66px;
-	left: -34px;
+	top: .66rem;
+	left: -.34rem;
 }
 
 .part-1 .light-10 {
-	top: 66px;
-	right: -34px;
+	top: .66rem;
+	right: -.34rem;
 }
 
 .part-1 .light-11 {
-	top: 164px;
-	left: -34px;
+	top: 1.64rem;
+	left: -.34rem;
 }
 
 .part-1 .light-12 {
-	top: 164px;
-	right: -34px;
+	top: 1.64rem;
+	right: -.34rem;
 }
 
 .part-1 .light-13 {
-	top: 262px;
-	left: -34px;
+	top: 2.62rem;
+	left: -.34rem;
 }
 
 .part-1 .light-14 {
-	top: 262px;
-	right: -34px;
+	top: 2.62rem;
+	right: -.34rem;
 }
 
 .part-1 .light-15 {
-	top: 360px;
-	left: -34px;
+	top: 3.60rem;
+	left: -.34rem;
 }
 
 .part-1 .light-16 {
-	top: 360px;
-	left: 95px;
+	top: 3.60rem;
+	left: .95rem;
 }
 
 .part-1 .light-17 {
-	top: 360px;
-	left: 225px;
+	top: 3.60rem;
+	left: 2.25rem;
 }
 
 .part-1 .light-18 {
-	top: 360px;
-	left: 360px;
+	top: 3.60rem;
+	left: 3.60rem;
 }
 
 .part-1 .light-19 {
-	top: 360px;
-	right: 360px;
+	top: 3.60rem;
+	right: 3.60rem;
 }
 
 .part-1 .light-20 {
-	top: 360px;
-	right: 225px;
+	top: 3.60rem;
+	right: 2.25rem;
 }
 
 .part-1 .light-21 {
-	top: 360px;
-	right: 95px;
+	top: 3.60rem;
+	right: .95rem;
 }
 
 .part-1 .light-22 {
-	top: 360px;
-	right: -34px;
+	top: 3.60rem;
+	right: -.34rem;
 }
 
 .part-1 .light-23 {
-	bottom: -34px;
-	left: -34px;
+	bottom: -.34rem;
+	left: -.34rem;
 }
 
 .part-1 .light-24 {
-	bottom: -34px;
-	left: 95px;
+	bottom: -.34rem;
+	left: .95rem;
 }
 
 .part-1 .light-25 {
-	bottom: -34px;
-	left: 225px;
+	bottom: -.34rem;
+	left: 2.25rem;
 }
 
 .part-1 .light-26 {
-	bottom: -34px;
-	left: 360px;
+	bottom: -.34rem;
+	left: 3.60rem;
 }
 
 .part-1 .light-27 {
-	bottom: -34px;
-	right: 360px;
+	bottom: -.34rem;
+	right: 3.60rem;
 }
 
 .part-1 .light-28 {
-	bottom: -34px;
-	right: 225px;
+	bottom: -.34rem;
+	right: 2.25rem;
 }
 
 .part-1 .light-29 {
-	bottom: -34px;
-	right: 95px;
+	bottom: -.34rem;
+	right: .95rem;
 }
 
 .part-1 .light-30 {
-	bottom: -34px;
-	right: -34px;
+	bottom: -.34rem;
+	right: -.34rem;
 }
 
 .part-2 {
 	position: absolute;
-	width: 32px;
-	height: 220px;
-	border-left-width: 4px;
+	width: .32rem;
+	height: 2.20rem;
+	border-left-width: .04rem;
 	border-left-style: solid;
-	top: 160px;
-	left: 226px;
+	top: 1.60rem;
+	left: 2.26rem;
 }
 
 .part-2 .light-1 {
-	top: -32px;
-	left: -34px;
+	top: -.32rem;
+	left: -.34rem;
 }
 
 .part-2 .light-2 {
-	bottom: -32px;
-	left: -32px;
+	bottom: -.32rem;
+	left: -.32rem;
 }
 
 .part-3 {
 	position: absolute;
-	width: 32px;
-	height: 220px;
-	border-left-width: 4px;
+	width: .32rem;
+	height: 2.20rem;
+	border-left-width: .04rem;
 	border-left-style: solid;
-	top: 160px;
-	left: 352px;
+	top: 1.60rem;
+	left: 3.52rem;
 }
 
 .part-3 .light-1 {
-	top: -32px;
-	left: -34px;
+	top: -.32rem;
+	left: -.34rem;
 }
 
 .part-3 .light-2 {
-	bottom: -32px;
-	left: -32px;
+	bottom: -.32rem;
+	left: -.32rem;
 }
 
 .part-4 {
 	position: absolute;
-	width: 32px;
-	height: 220px;
-	border-left-width: 4px;
+	width: .32rem;
+	height: 2.20rem;
+	border-left-width: .04rem;
 	border-left-style: solid;
-	top: 160px;
-	left: 488px;
+	top: 1.60rem;
+	left: 4.88rem;
 }
 
 .part-4 .light-1 {
-	top: -32px;
-	left: -34px;
+	top: -.32rem;
+	left: -.34rem;
 }
 
 .part-4 .light-2 {
-	bottom: -32px;
-	left: -32px;
+	bottom: -.32rem;
+	left: -.32rem;
 }
 
 .part-5 {
 	position: absolute;
-	width: 32px;
-	height: 220px;
-	border-left-width: 4px;
+	width: .32rem;
+	height: 2.20rem;
+	border-left-width: .04rem;
 	border-left-style: solid;
-	top: 160px;
-	right: 352px;
+	top: 1.60rem;
+	right: 3.52rem;
 }
 
 .part-5 .light-1 {
-	top: -32px;
-	left: -34px;
+	top: -.32rem;
+	left: -.34rem;
 }
 
 .part-5 .light-2 {
-	bottom: -32px;
-	left: -32px;
+	bottom: -.32rem;
+	left: -.32rem;
 }
 
 .part-6 {
 	position: absolute;
-	width: 32px;
-	height: 220px;
-	border-left-width: 4px;
+	width: .32rem;
+	height: 2.20rem;
+	border-left-width: .04rem;
 	border-left-style: solid;
-	top: 160px;
-	right: 226px;
+	top: 1.60rem;
+	right: 2.26rem;
 }
 
 .part-6 .light-1 {
-	top: -32px;
-	left: -34px;
+	top: -.32rem;
+	left: -.34rem;
 }
 
 .part-6 .light-2 {
-	bottom: -32px;
-	left: -32px;
+	bottom: -.32rem;
+	left: -.32rem;
 }
 
 
@@ -289,50 +299,50 @@
 
 .projector {
 	position: absolute;
-	width: 64px;
-	height: 64px;
-	top: 236px;
-	left: 550px;
+	width: .64rem;
+	height: .64rem;
+	top: 2.36rem;
+	left: 5.50rem;
 }
 
 
 /*窗帘*/
 
 .curtain-1 {
-	bottom: -30px;
-	left: 37px;
+	bottom: -.30rem;
+	left: .37rem;
 }
 
 .curtain-2 {
-	bottom: -30px;
-	left: 168px;
+	bottom: -.30rem;
+	left: 1.68rem;
 }
 
 .curtain-3 {
-	bottom: -30px;
-	left: 299px;
+	bottom: -.30rem;
+	left: 2.99rem;
 }
 
 .curtain-4 {
-	bottom: -30px;
-	left: 430px;
+	bottom: -.30rem;
+	left: 4.30rem;
 }
 
 .curtain-5 {
-	bottom: -30px;
-	right: 432px;
+	bottom: -.30rem;
+	right: 4.32rem;
 }
 
 .curtain-6 {
-	bottom: -30px;
-	right: 301px;
+	bottom: -.30rem;
+	right: 3.01rem;
 }
 .curtain-7 {
-	bottom: -30px;
-	right: 170px;
+	bottom: -.30rem;
+	right: 1.70rem;
 }
 
 .curtain-8 {
-	bottom: -30px;
-	right: 40px;
+	bottom: -.30rem;
+	right: .40rem;
 }

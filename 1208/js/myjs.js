@@ -59,6 +59,14 @@ $(document).ready(function() {
 		$(".switch").css("display", "none");
 		$(".curtain").css("display", "block");
 	})
+	//上下按钮
+	$(".more-top").click(function () {
+		$(".menu ul").animate({"top":"0"},200)
+	})
+	$(".more-btm").click(function () {
+		$(".menu ul").animate({"top":"-36%"},200)
+	})
+	
 	//right
 	
 	//开灯function

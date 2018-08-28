@@ -3,7 +3,16 @@ html,
 body {
 	margin: 0;
 }
-
+@media only screen and (min-width:1024px ) {
+	html{
+		font-size: 80px;
+	}
+}
+@media only screen and (min-width:1280px ) {
+	html{
+		font-size: 100px;
+	}
+}
 ul,
 li {
 	list-style: none;
@@ -34,8 +43,8 @@ li {
 }
 
 .box {
-	width: 1280px;
-	height: 747px;
+	width: 12.80rem;
+	height: 7.47rem;
 	box-sizing: border-box;
 }
 
@@ -43,8 +52,8 @@ li {
 /*left*/
 
 .left {
-	width: 164px;
-	height: 747px;
+	width: 1.64rem;
+	height: 7.47rem;
 	background-color: #171b25;
 	box-sizing: border-box;
 }
@@ -52,19 +61,19 @@ li {
 .left h1 {
 	text-align: center;
 	color: #FFFFFF;
-	font-size: 36px;
+	font-size: .36rem;
 	font-weight: normal;
-	padding: 20px 0 10px;
+	padding: .20rem 0 .10rem;
 	margin: 0;
 }
 
 .left h1 img {
-	height: 27px;
-	margin-right: 5px;
+	height: .27rem;
+	margin-right: .05rem;
 }
 
 .left .menu {
-	height: 562px;
+	height: 5.62rem;
 	overflow: hidden;
 	position: relative;
 }
@@ -77,55 +86,62 @@ li {
 }
 
 .left .menu ul li {
-	padding: 0px 20px;
-	margin: 32px 0;
+	padding: 0rem .20rem;
+	margin: .32rem 0;
 }
 
 .left .menu ul .line {
 	width: 100%;
-	height: 2px;
-	margin: 40px 0;
+	height: .02rem;
+	margin: .40rem 0;
 	background-color: #FFFFFF;
 	opacity: 0.5;
 }
 
 .left .menu li h2 {
-	line-height: 64px;
+	line-height: .64rem;
 	color: #FFFFFF;
-	font-size: 20px;
+	font-size: .20rem;
 	font-weight: normal;
 	margin: 0;
-	padding-left: 10px;
+	padding-left: .10rem;
 }
 
 .left .menu li h3 {
-	line-height: 64px;
+	line-height: .64rem;
 	color: #FFFFFF;
-	font-size: 16px;
+	font-size: .16rem;
 	font-weight: normal;
 	margin: 0;
-	padding-left: 10px;
+	padding-left: .10rem;
 }
 
 .left .menu li img {
-	width: 64px;
-	height: 64px;
+	width: .64rem;
+	height: .64rem;
 }
 
-.left .more {
+.left .more-top {
 	text-align: center;
-	padding-top: 15px;
+	padding-bottom: .15rem;
+	transform: rotateZ(180deg);
 }
 
-.left .more img {
-	width: 31px;
-	height: 31px;
+.left .more-btm {
+	text-align: center;
+	padding-top: .15rem;
+}
+
+.left .more-top img,
+.left .more-btm img {
+	width: .31rem;
+	height: .31rem;
 }
 
 .right {
 	float: right;
-	width: 1116px;
-	height: 747px;
+	width: 11.16rem;
+	height: 7.47rem;
 	box-sizing: border-box;
 }
 
@@ -142,10 +158,10 @@ li {
 
 @keyframes down {
 	from {
-		transform: translateZ(0px);
+		transform: translateZ(0rem);
 	}
 	to {
-		transform: translateZ(-9px);
+		transform: translateZ(-.09rem);
 	}
 }
 
@@ -155,10 +171,10 @@ li {
 
 @keyframes up {
 	from {
-		transform: translateZ(-9px);
+		transform: translateZ(-.09rem);
 	}
 	to {
-		transform: translateZ(0px);
+		transform: translateZ(0rem);
 	}
 }
 
@@ -167,8 +183,8 @@ li {
 
 .light {
 	position: absolute;
-	width: 64px;
-	height: 64px;
+	width: .64rem;
+	height: .64rem;
 }
 
 .light-off {
@@ -217,8 +233,8 @@ li {
 
 .curtain {
 	position: absolute;
-	width: 64px;
-	height: 64px;
+	width: .64rem;
+	height: .64rem;
 }
 
 .curtain-off {
@@ -259,104 +275,6 @@ li {
 	z-index: 9;
 	background-color: rgba(0, 0, 0, 0.3);
 	display: none;
-}
-
-
-/*窗帘弹窗*/
-
-.popup1 {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	width: 550px;
-	height: 350px;
-	margin-top: -175px;
-	margin-left: -275px;
-	background-color: #fff;
-	z-index: 10;
-	display: none;
-}
-
-.popup1 .icon-curtain {
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	top: -50px;
-	left: 50%;
-	margin-left: -50px;
-	background: url(../img/icon-curtain-on.png) no-repeat;
-	background-size: cover;
-}
-
-.popup1 .icon-curtain img {
-	width: 62px;
-	height: 60px;
-	position: absolute;
-	top: 20px;
-	left: 50%;
-	margin-left: -32px;
-}
-
-.popup1 .progress {
-	width: 400px;
-	margin: 170px auto 0;
-	height: 10px;
-	background-color: #3b5daa;
-	border-radius: 10px;
-	overflow: visible;
-}
-
-.popup1 .progress .progress-bar {
-	width: 0%;
-	background-color: #a3a8d4;
-	border-radius: 10px;
-}
-
-.popup1 .progress .progress-bar .dian {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	top: -5px;
-	right: -10px;
-	background-color: #3b5daa;
-}
-
-.popup1 .progress .progress-bar .kuang {
-	position: absolute;
-	width: 82px;
-	height: 46px;
-	top: -70px;
-	right: -60px;
-	color: #ffffff;
-	font-size: 24px;
-	text-align: center;
-	line-height: 40px;
-	background: url(../img/kuang.png) no-repeat;
-	background-size: cover;
-}
-
-.popup1 .bottom {
-	position: absolute;
-	width: 100%;
-	height: 80px;
-	bottom: 0;
-	left: 0;
-}
-
-.popup1 .bottom button {
-	width: 33.333333%;
-	line-height: 80px;
-	font-size: 36px;
-	color: #FFFFFF;
-	box-sizing: border-box;
-	background-color: #3f5daa;
-	text-align: center;
-	border: none;
-}
-
-.popup1 .bottom .button {
-	background-color: #2F456D;
 }
 
 
@@ -407,7 +325,7 @@ li {
 .popup1 .progress .progress-bar {
 	width: 0%;
 	background-color: #a3a8d4;
-	border-radius: 10px;
+	border-radius: 10rem;
 }
 
 .popup1 .progress .progress-bar .dian {
@@ -415,7 +333,7 @@ li {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	top: -5px;
+	top: -05px;
 	right: -10px;
 	background-color: #3b5daa;
 }
@@ -462,86 +380,86 @@ li {
 
 .popup2 {
 	position: fixed;
-	width: 530px;
-	height: 410px;
+	width: 5.30rem;
+	height: 4.10rem;
 	top: 50%;
 	left: 50%;
-	margin-top: -205px;
-	margin-left: -265px;
+	margin-top: -2.05rem;
+	margin-left: -2.65rem;
 	background-color: #FFFFFF;
 	display: none;
 }
 
 .popup2 .t-box {
 	width: 68%;
-	height: 160px;
+	height: 1.60rem;
 	box-sizing: border-box;
-	border-right: 2px solid #51a4a3;
-	border-bottom: 2px solid #51a4a3;
+	border-right: .02rem solid #51a4a3;
+	border-bottom: .02rem solid #51a4a3;
 }
 
 .popup2 .t-box h2 {
 	color: #51a4a3;
-	font-size: 18px;
-	padding: 20px;
+	font-size: .18rem;
+	padding: .20rem;
 	margin: 0;
 }
 
 .popup2 .t-box h1 {
-	padding-left: 100px;
+	padding-left: 1.00rem;
 	margin: 0;
-	padding-bottom: 19px;
+	padding-bottom: .19rem;
 }
 
 .popup2 .t-box h1 p {
 	color: #51a4a3;
-	font-size: 88px;
+	font-size: .88rem;
 	margin: 0;
 }
 
 .popup2 .t-box h1 i {
-	font-size: 36px;
+	font-size: .36rem;
 	font-style: normal;
 	color: #51a4a3;
 	display: block;
 }
 
 .popup2 .t-box h1 img {
-	margin-left: 40px;
+	margin-left: .40rem;
 }
 
 .popup2 .data-box {
 	width: 32%;
-	height: 160px;
+	height: 1.60rem;
 	box-sizing: border-box;
-	border-bottom: 2px solid #51a4a3;
-	padding: 0 20px;
+	border-bottom: .02rem solid #51a4a3;
+	padding: 0 .20rem;
 }
 
 .popup2 .data-box li {
-	padding: 15px 0;
+	padding: .15rem 0;
 	color: #51A4A3;
 }
 
 .popup2 .data-box li div:first-child {
-	font-size: 16px;
-	line-height: 20px;
+	font-size: .16rem;
+	line-height: .20rem;
 	width: 60%;
 }
 
 .popup2 .data-box li div:last-child {
-	font-size: 18px;
-	line-height: 20px;
+	font-size: .18rem;
+	line-height: .20rem;
 	width: 40%;
 }
 
 .popup2 .data-box li div i {
-	font-size: 20px;
+	font-size: .20rem;
 	font-style: normal;
 }
 
 .popup2 .data-box li div span {
-	font-size: 10px;
+	font-size: .10rem;
 }
 
 .popup2 .btn-box li {
@@ -549,12 +467,12 @@ li {
 	text-align: center;
 	color: #51A4A3;
 	box-sizing: border-box;
-	padding: 5px 0;
+	padding: .05rem 0;
 }
 
 .popup2 .btn-box li .icon-btn {
-	width: 78px;
-	height: 78px;
+	width: .78rem;
+	height: .78rem;
 	background: transparent;
 	padding: 0;
 	outline: none;
@@ -565,7 +483,7 @@ li {
 
 .popup2 .btn-box li h1 {
 	margin: 0;
-	font-size: 16px;
+	font-size: .16rem;
 	text-align: center;
-	padding: 10px 0;
+	padding: .10rem 0;
 }
