@@ -34,15 +34,16 @@
 	bottom: .95rem;
 	width: 9.14rem;
 	height: .04rem;
+	background-color: #716866;
 }
 
-.light-off .wire-1 {
+/*.light-off .wire-1 {
 	background-color: #716866;
 }
 
 .light-on .wire-1 {
 	background-color: #F78A06;
-}
+}*/
 
 .part-1 .light-1 {
 	top: -.32rem;
@@ -201,7 +202,7 @@
 	border-left-width: .04rem;
 	border-left-style: solid;
 	top: 1.60rem;
-	left: 2.26rem;
+	left: 1.85rem;
 }
 
 .part-2 .light-1 {
@@ -221,7 +222,7 @@
 	border-left-width: .04rem;
 	border-left-style: solid;
 	top: 1.60rem;
-	left: 3.52rem;
+	left: 3.17rem;
 }
 
 .part-3 .light-1 {
@@ -241,7 +242,7 @@
 	border-left-width: .04rem;
 	border-left-style: solid;
 	top: 1.60rem;
-	left: 4.88rem;
+	left: 4.50rem;
 }
 
 .part-4 .light-1 {
@@ -261,7 +262,7 @@
 	border-left-width: .04rem;
 	border-left-style: solid;
 	top: 1.60rem;
-	right: 3.52rem;
+	right: 3.13rem;
 }
 
 .part-5 .light-1 {
@@ -281,7 +282,7 @@
 	border-left-width: .04rem;
 	border-left-style: solid;
 	top: 1.60rem;
-	right: 2.26rem;
+	right: 1.8rem;
 }
 
 .part-6 .light-1 {
@@ -298,9 +299,6 @@
 /*投影仪*/
 
 .projector {
-	position: absolute;
-	width: .64rem;
-	height: .64rem;
 	top: 2.36rem;
 	left: 5.50rem;
 }
