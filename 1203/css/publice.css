@@ -62,6 +62,7 @@ li {
 	top: 3.74rem;
 	left: 0.30rem;
 	margin-top: -3.20rem;
+	overflow: hidden;
 	background-color: #3f5daa;
 	-moz-box-shadow: 0rem 0rem .20rem #4A4A4A;
 	-webkit-box-shadow: 0rem 0rem .20rem #4A4A4A;

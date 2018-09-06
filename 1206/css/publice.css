@@ -60,6 +60,7 @@ li {
 	height: 7.47rem;
 	background-color: #171b25;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 .left h1 {
@@ -132,14 +133,14 @@ li {
 
 .left .more-top {
 	text-align: center;
-	padding-top: .1rem;
+	padding-top: .15rem;
 	transform: rotateZ(180deg);
 	opacity: 0;
 }
 
 .left .more-btm {
 	text-align: center;
-	padding-top: .1rem;
+	padding-top: .15rem;
 }
 
 .left .more-top img,
