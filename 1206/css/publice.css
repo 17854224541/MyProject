@@ -77,15 +77,15 @@ li {
 	height: 5.65rem;
 	overflow: hidden;
 	position: relative;
-	-moz-box-shadow: 0px 5px 5px #828282;
-	-webkit-box-shadow: 0px 5px 5px #828282;
-	box-shadow: 0px 5px 5px #828282;
+	-moz-box-shadow: 0px -2px 5px #828282 inset;
+	-webkit-box-shadow: 0px -2px 5px #828282 inset;
+	box-shadow: 0px -2px 5px #828282 inset;
 }
 
 .left .menu1 {
-	-moz-box-shadow: 0px -5px 5px #828282;
-	-webkit-box-shadow: 0px -5px 5px #828282;
-	box-shadow: 0px -5px 5px #828282;
+	-moz-box-shadow: 0px 2px 5px #828282 inset;
+	-webkit-box-shadow: 0px 2px 5px #828282 inset;
+	box-shadow: 0px 2px 5px #828282 inset;
 }
 
 .left .menu ul {
