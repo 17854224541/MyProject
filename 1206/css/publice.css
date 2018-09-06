@@ -67,13 +67,24 @@ li {
 	padding: .20rem 0 .10rem;
 	margin: 0;
 }
-.left h1 img{
+
+.left h1 img {
 	height: .35rem;
 }
+
 .left .menu {
 	height: 5.65rem;
 	overflow: hidden;
 	position: relative;
+	-moz-box-shadow: 0px 5px 5px #828282;
+	-webkit-box-shadow: 0px 5px 5px #828282;
+	box-shadow: 0px 5px 5px #828282;
+}
+
+.left .menu1 {
+	-moz-box-shadow: 0px -5px 5px #828282;
+	-webkit-box-shadow: 0px -5px 5px #828282;
+	box-shadow: 0px -5px 5px #828282;
 }
 
 .left .menu ul {
@@ -90,7 +101,7 @@ li {
 
 .left .menu ul .title {
 	color: #FFFFFF;
-	font-size: .23rem;
+	font-size: .17rem;
 	width: 100%;
 	box-sizing: border-box;
 	padding: .05rem 0 .05rem 0.2rem;
@@ -157,6 +168,7 @@ li {
 	width: .64rem;
 	height: .64rem;
 }
+
 
 /*.light-off {
 	border-color: #716866;

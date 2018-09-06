@@ -82,6 +82,15 @@ li {
 	height: 4.7rem;
 	overflow: hidden;
 	position: relative;
+	-moz-box-shadow: 0px 5px 5px #A4A2F5;
+	-webkit-box-shadow: 0px 5px 5px #A4A2F5;
+	box-shadow: 0px 5px 5px #A4A2F5;
+}
+
+.left .menu1 {
+	-moz-box-shadow: 0px -5px 5px #A4A2F5;
+	-webkit-box-shadow: 0px -5px 5px #A4A2F5;
+	box-shadow: 0px -5px 5px #A4A2F5;
 }
 
 .left .menu ul {
@@ -97,7 +106,7 @@ li {
 
 .left .menu ul .title {
 	color: #FFFFFF;
-	font-size: .23rem;
+	font-size: .17rem;
 	width: 100%;
 	box-sizing: border-box;
 	padding: .05rem 0 .05rem 0.3rem;

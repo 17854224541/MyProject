@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	//left
-	$(".menu ul li").eq(0).css("background-color", "#41567A");
+	$(".menu ul li").eq(0).css("background-color", "#2F456D");
 	$(".menu ul li").click(function() {
 		$(".menu ul li").css("background-color", "Transparent");
-		$(this).css("background-color", "#41567A");
+		$(this).css("background-color", "#2F456D");
 	})
 	//离开
 	$(".likai").click(function() {
@@ -27,7 +27,11 @@ $(document).ready(function() {
 		lighton1($(".light1 .light"));
 		lighton2($(".light2 .light"));
 		//窗帘
-		curtainoff($(".curtain"))
+		curtainon($(".curtain"))
+		curtainoff($(".curtain-6"))
+		curtainoff($(".curtain-5"))
+		curtainoff($(".curtain-4"))
+		curtainoff($(".curtain-3"))
 	})
 	//会议
 	$(".huiyi").click(function() {
@@ -40,7 +44,6 @@ $(document).ready(function() {
 		lighton2($(".light2 .light"));
 		//窗帘开
 		curtainon($(".curtain"))
-
 	})
 	//投影
 	$(".touying").click(function() {
@@ -51,8 +54,7 @@ $(document).ready(function() {
 		//灯
 		lightoff1($(".light1 .light"));
 		lightoff2($(".light2 .light"))
-		lighton2($(".part-5 .light"))
-		lighton2($(".part-6 .light"))
+		lighton2($(".part-4 .light"))
 		//窗帘关
 		curtainoff($(".curtain"))
 	})
@@ -65,8 +67,7 @@ $(document).ready(function() {
 		//灯
 		lightoff1($(".light1 .light"));
 		lightoff2($(".light2 .light"))
-		lighton2($(".part-5 .light"))
-		lighton2($(".part-6 .light"))
+		lighton2($(".part-4 .light"))
 		//窗帘关
 		curtainoff($(".curtain"))
 	})
@@ -89,174 +90,90 @@ $(document).ready(function() {
 		}, 200);
 		$(".more-top").css("opacity", "0");
 		$(".more-btm").css("opacity", "1");
+		$(".menu").removeClass("menu1")
 	})
 	$(".more-btm").click(function() {
 		$(".menu ul").animate({
-			"top": "-20%"
+			"top": "-35%"
 		}, 200);
 		$(".more-top").css("opacity", "1");
 		$(".more-btm").css("opacity", "0");
+		$(".menu").addClass("menu1")
 	})
-
+	
 	//right
 
 	//开灯function
-	function lighton1(light) {
-		olight = light.parent(".light-box").find(".light");
+	function lighton1(light1) {
+		olight = light1.parent(".light-box").find(".light");
 		kd0 = setTimeout(function() {
 			olight.eq(0).removeClass("light-off");
 			olight.eq(0).addClass("light-on");
-			olight.eq(0).find("input").val("on");
 		}, 0);
 		kd1 = setTimeout(function() {
 			olight.eq(1).removeClass("light-off");
 			olight.eq(1).addClass("light-on");
-			olight.eq(1).find("input").val("on");
 		}, 50);
 		kd2 = setTimeout(function() {
 			olight.eq(2).removeClass("light-off");
 			olight.eq(2).addClass("light-on");
-			olight.eq(2).find("input").val("on");
 		}, 100);
 		kd3 = setTimeout(function() {
 			olight.eq(3).removeClass("light-off");
 			olight.eq(3).addClass("light-on");
-			olight.eq(3).find("input").val("on");
 		}, 150);
 		kd4 = setTimeout(function() {
 			olight.eq(4).removeClass("light-off");
 			olight.eq(4).addClass("light-on");
-			olight.eq(4).find("input").val("on");
 		}, 200);
 		kd5 = setTimeout(function() {
 			olight.eq(5).removeClass("light-off");
 			olight.eq(5).addClass("light-on");
-			olight.eq(5).find("input").val("on");
 		}, 250);
 		kd6 = setTimeout(function() {
 			olight.eq(6).removeClass("light-off");
 			olight.eq(6).addClass("light-on");
-			olight.eq(6).find("input").val("on");
 		}, 300);
 		kd7 = setTimeout(function() {
 			olight.eq(7).removeClass("light-off");
 			olight.eq(7).addClass("light-on");
-			olight.eq(7).find("input").val("on");
 		}, 350);
 		kd8 = setTimeout(function() {
 			olight.eq(8).removeClass("light-off");
 			olight.eq(8).addClass("light-on");
-			olight.eq(8).find("input").val("on");
 		}, 400);
 		kd9 = setTimeout(function() {
 			olight.eq(9).removeClass("light-off");
 			olight.eq(9).addClass("light-on");
-			olight.eq(9).find("input").val("on");
 		}, 450);
 		kd10 = setTimeout(function() {
 			olight.eq(10).removeClass("light-off");
 			olight.eq(10).addClass("light-on");
-			olight.eq(10).find("input").val("on");
 		}, 500);
 		kd11 = setTimeout(function() {
 			olight.eq(11).removeClass("light-off");
 			olight.eq(11).addClass("light-on");
-			olight.eq(11).find("input").val("on");
 		}, 550);
 		kd12 = setTimeout(function() {
 			olight.eq(12).removeClass("light-off");
 			olight.eq(12).addClass("light-on");
-			olight.eq(12).find("input").val("on");
 		}, 600);
 		kd13 = setTimeout(function() {
 			olight.eq(13).removeClass("light-off");
 			olight.eq(13).addClass("light-on");
-			olight.eq(13).find("input").val("on");
 		}, 650);
 		kd14 = setTimeout(function() {
 			olight.eq(14).removeClass("light-off");
 			olight.eq(14).addClass("light-on");
-			olight.eq(14).find("input").val("on");
 		}, 700);
 		kd15 = setTimeout(function() {
 			olight.eq(15).removeClass("light-off");
 			olight.eq(15).addClass("light-on");
-			olight.eq(15).find("input").val("on");
 		}, 750);
-		kd16 = setTimeout(function() {
-			olight.eq(16).removeClass("light-off");
-			olight.eq(16).addClass("light-on");
-			olight.eq(16).find("input").val("on");
-		}, 800);
-		kd17 = setTimeout(function() {
-			olight.eq(17).removeClass("light-off");
-			olight.eq(17).addClass("light-on");
-			olight.eq(17).find("input").val("on");
-		}, 850);
-		kd18 = setTimeout(function() {
-			olight.eq(18).removeClass("light-off");
-			olight.eq(18).addClass("light-on");
-			olight.eq(18).find("input").val("on");
-		}, 900);
-		kd19 = setTimeout(function() {
-			olight.eq(19).removeClass("light-off");
-			olight.eq(19).addClass("light-on");
-			olight.eq(19).find("input").val("on");
-		}, 950);
-		kd20 = setTimeout(function() {
-			olight.eq(20).removeClass("light-off");
-			olight.eq(20).addClass("light-on");
-			olight.eq(20).find("input").val("on");
-		}, 1000);
-		kd21 = setTimeout(function() {
-			olight.eq(21).removeClass("light-off");
-			olight.eq(21).addClass("light-on");
-			olight.eq(21).find("input").val("on");
-		}, 1050);
-		kd22 = setTimeout(function() {
-			olight.eq(22).removeClass("light-off");
-			olight.eq(22).addClass("light-on");
-			olight.eq(22).find("input").val("on");
-		}, 1100);
-		kd23 = setTimeout(function() {
-			olight.eq(23).removeClass("light-off");
-			olight.eq(23).addClass("light-on");
-			olight.eq(23).find("input").val("on");
-		}, 1150);
-		kd24 = setTimeout(function() {
-			olight.eq(24).removeClass("light-off");
-			olight.eq(24).addClass("light-on");
-			olight.eq(24).find("input").val("on");
-		}, 1200);
-		kd25 = setTimeout(function() {
-			olight.eq(25).removeClass("light-off");
-			olight.eq(25).addClass("light-on");
-			olight.eq(25).find("input").val("on");
-		}, 1250);
-		kd26 = setTimeout(function() {
-			olight.eq(26).removeClass("light-off");
-			olight.eq(26).addClass("light-on");
-			olight.eq(26).find("input").val("on");
-		}, 1300);
-		kd27 = setTimeout(function() {
-			olight.eq(27).removeClass("light-off");
-			olight.eq(27).addClass("light-on");
-			olight.eq(27).find("input").val("on");
-		}, 1350);
-		kd28 = setTimeout(function() {
-			olight.eq(28).removeClass("light-off");
-			olight.eq(28).addClass("light-on");
-			olight.eq(28).find("input").val("on");
-		}, 1400);
-		kd29 = setTimeout(function() {
-			olight.eq(29).removeClass("light-off");
-			olight.eq(29).addClass("light-on");
-			olight.eq(29).find("input").val("on");
-		}, 1450);
-		light.parent(".light-box").css("border-color", "#f78a06");
-		$(".wire-1").css("background-color", "#f78a06")
+		olight.find("input").val("on");
+		light1.parent(".light-box").css("border-color", "#f78a06")
 	}
-	//第二种灯开
+	//开灯2
 	function lighton2(light2) {
 		olight2 = light2.parent(".light-box").find(".light");
 		olight2.removeClass("light-off");
@@ -282,28 +199,13 @@ $(document).ready(function() {
 		clearTimeout(kd13);
 		clearTimeout(kd14);
 		clearTimeout(kd15);
-		clearTimeout(kd16);
-		clearTimeout(kd17);
-		clearTimeout(kd18);
-		clearTimeout(kd19);
-		clearTimeout(kd20);
-		clearTimeout(kd21);
-		clearTimeout(kd22);
-		clearTimeout(kd23);
-		clearTimeout(kd24);
-		clearTimeout(kd25);
-		clearTimeout(kd26);
-		clearTimeout(kd27);
-		clearTimeout(kd28);
-		clearTimeout(kd29);
 		olight = light.parent(".light-box").find(".light");
 		olight.removeClass("light-on");
 		olight.addClass("light-off");
 		olight.find("input").val("off");
 		light.parent(".light-box").css("border-color", "#716866");
-		$(".wire-1").css("background-color", "#716866")
 	}
-	//第二种灯关
+	//关灯2
 	function lightoff2(light2) {
 		olight2 = light2.parent(".light-box").find(".light");
 		olight2.removeClass("light-on");
@@ -329,22 +231,24 @@ $(document).ready(function() {
 			lightoff2($(this));
 		}
 	})
+
 	//投影仪开function
 	function projectoron(projector) {
 		projector.removeClass("projector-off");
 		projector.addClass("projector-on");
 		projector.find("input").val("on");
-		$(".motaikuang").html("投影开");
 		$(".motaikuang").stop().show(200);
+		$(".motaikuang").html("投影开");
 		$(".motaikuang").delay(1000).hide(200);
+
 	}
 	//投影仪关function
 	function projectoroff(projector) {
 		projector.removeClass("projector-on");
 		projector.addClass("projector-off");
 		projector.find("input").val("off");
-		$(".motaikuang").html("投影关");
 		$(".motaikuang").stop().show(200);
+		$(".motaikuang").html("投影关");
 		$(".motaikuang").delay(1000).hide(200);
 	}
 	//投影仪开关function
@@ -356,7 +260,7 @@ $(document).ready(function() {
 			projectoroff(projector)
 		}
 	}
-	//点击投影仪开关
+	//点击投影仪开关事件
 	$(".projector").click(function() {
 		projectorswitch($(this));
 	})
@@ -383,7 +287,7 @@ $(document).ready(function() {
 	//点击窗帘开关
 	$(".curtain").click(function() {
 		var t1;
-		var index = $(this).index() - 8;
+		var index = $(this).index() - 6;
 		$(".zhezhao1").css("display", "block");
 		$(".popup1").eq(index).css("display", "block");
 		var curtain = $(this);
@@ -493,7 +397,6 @@ $(document).ready(function() {
 				$(".popup1 .icon-curtain img").css("height", (1 - 0 / 100) * 60 + "px");
 				//
 				$(".curtain").eq(index).find("input").val(ca);
-				console.log(ca);
 				if(ca == 0) {
 					curtainoff($(".curtain").eq(index))
 				}
