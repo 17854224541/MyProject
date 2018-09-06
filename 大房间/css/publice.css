@@ -64,18 +64,12 @@ li {
 
 .left h1 {
 	text-align: center;
-	color: #FFFFFF;
-	font-size: .36rem;
-	font-weight: normal;
 	padding: .20rem 0 .10rem;
 	margin: 0;
 }
-
-.left h1 img {
-	height: .27rem;
-	margin-right: .05rem;
+.left h1 img{
+	height: .35rem;
 }
-
 .left .menu {
 	height: 5.65rem;
 	overflow: hidden;
@@ -96,11 +90,11 @@ li {
 
 .left .menu ul .title {
 	color: #FFFFFF;
-	font-size: .20rem;
+	font-size: .23rem;
 	width: 100%;
 	box-sizing: border-box;
-	padding: .05rem;
-	border-bottom: 3px solid #363c4d;
+	padding: .05rem 0 .05rem 0.2rem;
+	border-bottom: 2px solid #363c4d;
 }
 
 .left .menu li h2 {
