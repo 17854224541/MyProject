@@ -98,26 +98,25 @@ li {
 }
 
 .left .menu li h2 {
-	line-height: .64rem;
+	line-height: .40rem;
 	color: #FFFFFF;
-	font-size: .20rem;
+	font-size: .17rem;
 	font-weight: normal;
 	margin: 0;
 	padding-left: .10rem;
 }
 
 .left .menu li h3 {
-	line-height: .64rem;
+	line-height: .40rem;
 	color: #FFFFFF;
-	font-size: .20rem;
+	font-size: .17rem;
 	font-weight: normal;
 	margin: 0;
 	padding-left: .10rem;
 }
 
 .left .menu li img {
-	width: .64rem;
-	height: .64rem;
+	width: .40rem;
 }
 
 .left .more-top {

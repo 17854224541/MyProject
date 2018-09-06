@@ -70,7 +70,7 @@ li {
 
 .left h1 {
 	text-align: center;
-	padding: .15rem 0 0;
+	padding: .15rem 0 0.1rem;
 	margin: 0;
 }
 
@@ -79,7 +79,7 @@ li {
 }
 
 .left .menu {
-	height: 4.9rem;
+	height: 4.7rem;
 	overflow: hidden;
 	position: relative;
 }
@@ -105,26 +105,25 @@ li {
 }
 
 .left .menu li h2 {
-	line-height: .64rem;
+	line-height: .50rem;
 	color: #FFFFFF;
-	font-size: .20rem;
+	font-size: .17rem;
 	font-weight: normal;
 	margin: 0;
 	padding-left: .10rem;
 }
 
 .left .menu li h3 {
-	line-height: .64rem;
+	line-height: .50rem;
 	color: #FFFFFF;
-	font-size: .20rem;
+	font-size: .17rem;
 	font-weight: normal;
 	margin: 0;
 	padding-left: .10rem;
 }
 
 .left .menu li img {
-	width: .64rem;
-	height: .64rem;
+	width: .50rem;
 }
 
 .left .more-top {
