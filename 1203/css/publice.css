@@ -75,6 +75,7 @@ li {
 	font-weight: normal;
 	padding: .15rem 0 0;
 	margin: 0;
+	letter-spacing: .08rem;
 }
 
 .left .menu {
@@ -99,8 +100,8 @@ li {
 	font-size: .20rem;
 	width: 100%;
 	box-sizing: border-box;
-	padding: .05rem;
-	border-bottom: 3px solid #2d477e;
+	padding: .05rem 0 .05rem 0.3rem;
+	border-bottom: 1.5px solid #2d477e;
 }
 
 .left .menu li h2 {
