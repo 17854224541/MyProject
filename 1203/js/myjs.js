@@ -93,11 +93,12 @@ $(document).ready(function() {
 	})
 	$(".more-btm").click(function() {
 		$(".menu ul").animate({
-			"top": "-40%"
+			"top": "-60%"
 		}, 200);
 		$(".more-top").css("opacity", "1");
 		$(".more-btm").css("opacity", "0");
 	})
+	
 	//right
 
 	//开灯function
@@ -296,6 +297,14 @@ $(document).ready(function() {
 		$(".popup1").eq(index).find(".progress-bar").css("width", ca / 100 * 400 + "px");
 		//窗帘
 		$(".popup1").eq(index).find(".icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
+		//按钮
+		if (ca==0) {
+			$(".popup1").eq(index).find(".c-btn-off").addClass("button");
+		} else if (ca==100) {
+			$(".popup1").eq(index).find(".c-btn-on").addClass("button");
+		} else{
+			$(".popup1").eq(index).find(".c-btn-stop").addClass("button");
+		}
 		//开
 		$(".popup1").eq(index).find(".c-btn-on").click(function() {
 			if(t1) {
