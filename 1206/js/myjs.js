@@ -225,36 +225,6 @@ $(document).ready(function() {
 			olight.eq(23).addClass("light-on");
 			olight.eq(23).find("input").val("on");
 		}, 1150);
-		kd24 = setTimeout(function() {
-			olight.eq(24).removeClass("light-off");
-			olight.eq(24).addClass("light-on");
-			olight.eq(24).find("input").val("on");
-		}, 1200);
-		kd25 = setTimeout(function() {
-			olight.eq(25).removeClass("light-off");
-			olight.eq(25).addClass("light-on");
-			olight.eq(25).find("input").val("on");
-		}, 1250);
-		kd26 = setTimeout(function() {
-			olight.eq(26).removeClass("light-off");
-			olight.eq(26).addClass("light-on");
-			olight.eq(26).find("input").val("on");
-		}, 1300);
-		kd27 = setTimeout(function() {
-			olight.eq(27).removeClass("light-off");
-			olight.eq(27).addClass("light-on");
-			olight.eq(27).find("input").val("on");
-		}, 1350);
-		kd28 = setTimeout(function() {
-			olight.eq(28).removeClass("light-off");
-			olight.eq(28).addClass("light-on");
-			olight.eq(28).find("input").val("on");
-		}, 1400);
-		kd29 = setTimeout(function() {
-			olight.eq(29).removeClass("light-off");
-			olight.eq(29).addClass("light-on");
-			olight.eq(29).find("input").val("on");
-		}, 1450);
 		light.parent(".light-box").css("border-color", "#f78a06");
 		$(".wire-1").css("background-color", "#f78a06")
 	}
@@ -292,12 +262,6 @@ $(document).ready(function() {
 		clearTimeout(kd21);
 		clearTimeout(kd22);
 		clearTimeout(kd23);
-		clearTimeout(kd24);
-		clearTimeout(kd25);
-		clearTimeout(kd26);
-		clearTimeout(kd27);
-		clearTimeout(kd28);
-		clearTimeout(kd29);
 		olight = light.parent(".light-box").find(".light");
 		olight.removeClass("light-on");
 		olight.addClass("light-off");

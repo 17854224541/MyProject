@@ -94,7 +94,7 @@ $(document).ready(function() {
 	})
 	$(".more-btm").click(function() {
 		$(".menu ul").animate({
-			"top": "-35%"
+			"top": "-40%"
 		}, 200);
 		$(".more-top").css("opacity", "1");
 		$(".more-btm").css("opacity", "0");
