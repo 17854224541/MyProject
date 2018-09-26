@@ -438,6 +438,14 @@ li {
 	width: 0.4rem;
 }
 
+.popup2 .t-box .snow {
+	width: 68%;
+	height: 1.60rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 .popup2 .data-box {
 	width: 32%;
 	height: 1.60rem;

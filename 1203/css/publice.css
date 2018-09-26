@@ -83,15 +83,15 @@ li {
 	height: 4.4rem;
 	overflow: hidden;
 	position: relative;
-	-moz-box-shadow: 0px -2px 2px rgba(0,0,0,0.3) inset;
-	-webkit-box-shadow: 0px -2px 2px rgba(0,0,0,0.3) inset;
-	box-shadow: 0px -2px 2px rgba(0,0,0,0.3) inset;
+	-moz-box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3) inset;
+	-webkit-box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3) inset;
 }
 
 .left .menu1 {
-	-moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.3) inset;
-	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.3) inset;
-	box-shadow: 0px 2px 2px rgba(0,0,0,0.3) inset;
+	-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3) inset;
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3) inset;
 }
 
 .left .menu ul {
@@ -175,7 +175,10 @@ li {
 	width: .64rem;
 	height: .64rem;
 }
-
+.part-1 .light{
+	width: .74rem;
+	height: .74rem;
+}
 
 /*.light-off {
 	border-color: #716866;
@@ -214,8 +217,8 @@ li {
 
 .projector {
 	position: absolute;
-	width: .64rem;
-	height: .64rem;
+	width: .72rem;
+	height: .72rem;
 }
 
 .projector-off {
@@ -446,6 +449,14 @@ li {
 .popup2 .t-box h1 img {
 	margin-left: .40rem;
 	width: 0.4rem;
+}
+
+.popup2 .t-box .snow {
+	width: 68%;
+	height: 1.60rem;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .popup2 .data-box {

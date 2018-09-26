@@ -559,21 +559,36 @@ $(document).ready(function() {
 			$(this).find("img").attr("src", "img/icon-zhire.png");
 			$(this).find("input").val("制热");
 			$(".moshi-img").attr("src", "img/icon-zhire-s.png");
+			$("#moshi").html("制热");
+			$("#snow").find("img").attr("src","img/icon-zhire-s.png")
 		} else if($(this).find("input").val() == "制热") {
 			//切换到除湿
 			$(this).find("img").attr("src", "img/icon-chushi.png");
 			$(this).find("input").val("除湿");
 			$(".moshi-img").attr("src", "img/icon-chushi-s.png");
+			$("#moshi").html("除湿");
+			$("#snow").find("img").attr("src","img/icon-chushi-s.png")
 		} else if($(this).find("input").val() == "除湿") {
-			//切换到通风
-			$(this).find("img").attr("src", "img/icon-tongfeng.png");
-			$(this).find("input").val("通风");
-			$(".moshi-img").attr("src", "img/icon-tongfeng-s.png");
-		} else if($(this).find("input").val() == "通风") {
+			//切换到换气
+			$(this).find("img").attr("src", "img/icon-huanqi.png");
+			$(this).find("input").val("换气");
+			$(".moshi-img").attr("src", "img/icon-huanqi-s.png");
+			$("#moshi").html("换气");
+			$("#snow").find("img").attr("src","img/icon-huanqi-s.png")
+		} else if($(this).find("input").val() == "换气") {
+			//切换到节能
+			$(this).find("img").attr("src", "img/icon-jieneng.png");
+			$(this).find("input").val("节能");
+			$(".moshi-img").attr("src", "img/icon-jieneng-s.png");
+			$("#moshi").html("节能");
+			$("#snow").find("img").attr("src","img/icon-jieneng-s.png")
+		} else if($(this).find("input").val() == "节能") {
 			//切换到制冷
 			$(this).find("img").attr("src", "img/icon-zhileng.png");
 			$(this).find("input").val("制冷");
 			$(".moshi-img").attr("src", "img/icon-zhileng-s.png");
+			$("#moshi").html("制冷");
+			$("#snow").find("img").attr("src","img/icon-zhileng-s.png")
 		}
 	})
 	//空调风速

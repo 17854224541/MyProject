@@ -6161,9 +6161,6 @@ a.thumbnail:hover {
 	background-color: #337ab7;
 	-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
-	-webkit-transition: width .6s ease;
-	-o-transition: width .6s ease;
-	transition: width .6s ease
 }
 
 .progress-bar-striped,
@@ -6175,12 +6172,12 @@ a.thumbnail:hover {
 	background-size: 40px 40px
 }
 
-.progress-bar.active,
+/*.progress-bar.active,
 .progress.active .progress-bar {
 	-webkit-animation: progress-bar-stripes 2s linear infinite;
 	-o-animation: progress-bar-stripes 2s linear infinite;
 	animation: progress-bar-stripes 2s linear infinite
-}
+}*/
 
 .progress-bar-success {
 	background-color: #5cb85c
