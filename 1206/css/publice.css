@@ -2,6 +2,7 @@
 html,
 body {
 	margin: 0;
+	font-family: "微软雅黑";
 	/*background-color: #171B25;*/
 }
 
@@ -60,7 +61,6 @@ li {
 	height: 7.47rem;
 	background-color: #171b25;
 	box-sizing: border-box;
-	overflow: hidden;
 }
 
 .left h1 {
@@ -74,36 +74,29 @@ li {
 }
 
 .left .menu {
+	width: 1.74rem;
 	height: 5.65rem;
 	overflow: hidden;
 	position: relative;
-	-moz-box-shadow: 0px -2px 2px #828282 inset;
-	-webkit-box-shadow: 0px -2px 2px #828282 inset;
-	box-shadow: 0px -2px 2px #828282 inset;
-}
-
-.left .menu1 {
-	-moz-box-shadow: 0px 2px 2px #828282 inset;
-	-webkit-box-shadow: 0px 2px 2px #828282 inset;
-	box-shadow: 0px 2px 2px #828282 inset;
 }
 
 .left .menu ul {
 	position: absolute;
-	width: 100%;
+	width: 1.64rem;
 	top: 0;
 	left: 0;
+	z-index: 3;
 }
 
 .left .menu ul li {
-	padding: 0rem .20rem;
-	margin: .24rem 0;
+	padding: .15rem .20rem;
+	position: relative;
 }
 
 .left .menu ul .title {
 	color: #FFFFFF;
-	font-size: .17rem;
-	width: 100%;
+	font-size: .19rem;
+	width: 1.64rem;
 	box-sizing: border-box;
 	padding: .05rem 0 .05rem 0.2rem;
 	border-bottom: 2px solid #363c4d;
@@ -127,20 +120,41 @@ li {
 	padding-left: .10rem;
 }
 
-.left .menu li img {
+.left .menu li .icon-img {
 	width: .40rem;
+}
+.left .menu li .icon-zhizhen {
+	z-index: -1;
+	position: absolute;
+	top: .02rem;
+	left: 0;
+	opacity: 0;
+}
+.left .menu li i {
+	display: block;
+	width: .15rem;
+	height: .19rem;
+	background: url(../img/icon-r.png) no-repeat;
+	margin-top: .09rem;
 }
 
 .left .more-top {
 	text-align: center;
 	padding-top: .15rem;
 	transform: rotateZ(180deg);
+	-moz-box-shadow: 0px -2px 0px #828282;
+	-webkit-box-shadow: 0px -2px 0px #828282;
+	box-shadow: 0px -2px 0px #828282;
+}
+.left .more-top img{
 	opacity: 0;
 }
-
 .left .more-btm {
 	text-align: center;
 	padding-top: .15rem;
+	-moz-box-shadow: 0px -2px 0px #828282;
+	-webkit-box-shadow: 0px -2px 0px #828282;
+	box-shadow: 0px -2px 0px #828282;
 }
 
 .left .more-top img,
@@ -226,6 +240,7 @@ li {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFFFFF;
 	font-size: 18px;
+	text-align: center;
 	padding: 10px 20px;
 	margin-left: -100px;
 	border-radius: 10px;
@@ -409,7 +424,7 @@ li {
 
 .popup2 .t-box h2 {
 	color: #51a4a3;
-	font-size: .18rem;
+	font-size: .16rem;
 	padding: .20rem;
 	margin: 0;
 }

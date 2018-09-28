@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	//left
-	$(".menu ul li").eq(0).css("background-color", "#41567A");
+	$(".menu ul li").eq(0).find(".icon-zhizhen").css("opacity", "1");
 	$(".menu ul li").click(function() {
-		$(".menu ul li").css("background-color", "Transparent");
-		$(this).css("background-color", "#41567A");
+		$(".menu ul li").find(".icon-zhizhen").css("opacity", "0");
+		$(this).find(".icon-zhizhen").css("opacity", "1");
 	})
 	//离开
 	$(".likai").click(function() {
@@ -15,7 +15,11 @@ $(document).ready(function() {
 		lightoff1($(".light1 .light"));
 		lightoff2($(".light2 .light"))
 		//窗帘
-		curtainon($(".curtain"))
+		curtainon($(".curtain"));
+		//模态框
+		$(".motaikuang").stop().show(200);
+		$(".motaikuang").html("点击设备控制开关");
+		$(".motaikuang").delay(1500).hide(200);
 	})
 	//会客
 	$(".huike").click(function() {
@@ -27,7 +31,11 @@ $(document).ready(function() {
 		lighton1($(".light1 .light"));
 		lighton2($(".light2 .light"));
 		//窗帘
-		curtainoff($(".curtain"))
+		curtainoff($(".curtain"));
+		//模态框
+		$(".motaikuang").stop().show(200);
+		$(".motaikuang").html("点击设备控制开关");
+		$(".motaikuang").delay(1500).hide(200);
 	})
 	//会议
 	$(".huiyi").click(function() {
@@ -39,7 +47,11 @@ $(document).ready(function() {
 		lighton1($(".light1 .light"));
 		lighton2($(".light2 .light"));
 		//窗帘开
-		curtainon($(".curtain"))
+		curtainon($(".curtain"));
+		//模态框
+		$(".motaikuang").stop().show(200);
+		$(".motaikuang").html("点击设备控制开关");
+		$(".motaikuang").delay(1500).hide(200);
 
 	})
 	//投影
@@ -54,7 +66,11 @@ $(document).ready(function() {
 		lighton2($(".part-5 .light"))
 		lighton2($(".part-6 .light"))
 		//窗帘关
-		curtainoff($(".curtain"))
+		curtainoff($(".curtain"));
+		//模态框
+		$(".motaikuang").stop().show(200);
+		$(".motaikuang").html("点击设备控制开关");
+		$(".motaikuang").delay(1500).hide(200);
 	})
 	//娱乐
 	$(".yule").click(function() {
@@ -68,36 +84,46 @@ $(document).ready(function() {
 		lighton2($(".part-5 .light"))
 		lighton2($(".part-6 .light"))
 		//窗帘关
-		curtainoff($(".curtain"))
+		curtainoff($(".curtain"));
+		//模态框
+		$(".motaikuang").stop().show(200);
+		$(".motaikuang").html("点击设备控制开关");
+		$(".motaikuang").delay(1500).hide(200);
 	})
 	//灯
 	$(".btn-light").click(function() {
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "none");
 		$(".light").css("display", "block");
+		//模态框
+		$(".motaikuang").stop().show(200);
+		$(".motaikuang").html("点击设备控制开关");
+		$(".motaikuang").delay(1500).hide(200);
 	})
 	//窗帘
 	$(".btn-curtain").click(function() {
 		$(".light-box").css("display", "none");
 		$(".switch").css("display", "none");
 		$(".curtain").css("display", "block");
+		//模态框
+		$(".motaikuang").stop().show(200);
+		$(".motaikuang").html("点击设备控制开关");
+		$(".motaikuang").delay(1500).hide(200);
 	})
 	//上下按钮
 	$(".more-top").click(function() {
 		$(".menu ul").animate({
 			"top": "0"
 		}, 200);
-		$(".more-top").css("opacity", "0");
-		$(".more-btm").css("opacity", "1");
-		$(".menu").removeClass("menu1")
+		$(".more-top img").css("opacity", "0");
+		$(".more-btm img").css("opacity", "1");
 	})
 	$(".more-btm").click(function() {
 		$(".menu ul").animate({
 			"top": "-20%"
 		}, 200);
-		$(".more-top").css("opacity", "1");
-		$(".more-btm").css("opacity", "0");
-		$(".menu").addClass("menu1")
+		$(".more-top img").css("opacity", "1");
+		$(".more-btm img").css("opacity", "0");
 	})
 
 	//right
@@ -300,26 +326,26 @@ $(document).ready(function() {
 		projector.removeClass("projector-off");
 		projector.addClass("projector-on");
 		projector.find("input").val("on");
-		$(".motaikuang").html("投影开");
-		$(".motaikuang").stop().show(200);
-		$(".motaikuang").delay(1000).hide(200);
 	}
 	//投影仪关function
 	function projectoroff(projector) {
 		projector.removeClass("projector-on");
 		projector.addClass("projector-off");
 		projector.find("input").val("off");
-		$(".motaikuang").html("投影关");
-		$(".motaikuang").stop().show(200);
-		$(".motaikuang").delay(1000).hide(200);
 	}
 	//投影仪开关function
 	function projectorswitch(projector) {
 		var la = projector.find("input").val();
 		if(la == "off") {
 			projectoron(projector);
+			$(".motaikuang").html("投影开");
+			$(".motaikuang").stop().show(200);
+			$(".motaikuang").delay(1500).hide(200);
 		} else {
-			projectoroff(projector)
+			projectoroff(projector);
+			$(".motaikuang").html("投影关");
+			$(".motaikuang").stop().show(200);
+			$(".motaikuang").delay(1500).hide(200);
 		}
 	}
 	//点击投影仪开关
@@ -362,11 +388,11 @@ $(document).ready(function() {
 		//窗帘
 		$(".popup1").eq(index).find(".icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
 		//按钮
-		if (ca==0) {
+		if(ca == 0) {
 			$(".popup1").eq(index).find(".c-btn-off").addClass("button");
-		} else if (ca==100) {
+		} else if(ca == 100) {
 			$(".popup1").eq(index).find(".c-btn-on").addClass("button");
-		} else{
+		} else {
 			$(".popup1").eq(index).find(".c-btn-stop").addClass("button");
 		}
 		//开
@@ -560,35 +586,35 @@ $(document).ready(function() {
 			$(this).find("input").val("制热");
 			$(".moshi-img").attr("src", "img/icon-zhire-s.png");
 			$("#moshi").html("制热");
-			$("#snow").find("img").attr("src","img/icon-zhire-s.png")
+			$("#snow").find("img").attr("src", "img/icon-zhire-s.png")
 		} else if($(this).find("input").val() == "制热") {
 			//切换到除湿
 			$(this).find("img").attr("src", "img/icon-chushi.png");
 			$(this).find("input").val("除湿");
 			$(".moshi-img").attr("src", "img/icon-chushi-s.png");
 			$("#moshi").html("除湿");
-			$("#snow").find("img").attr("src","img/icon-chushi-s.png")
+			$("#snow").find("img").attr("src", "img/icon-chushi-s.png")
 		} else if($(this).find("input").val() == "除湿") {
 			//切换到换气
 			$(this).find("img").attr("src", "img/icon-huanqi.png");
 			$(this).find("input").val("换气");
 			$(".moshi-img").attr("src", "img/icon-huanqi-s.png");
 			$("#moshi").html("换气");
-			$("#snow").find("img").attr("src","img/icon-huanqi-s.png")
+			$("#snow").find("img").attr("src", "img/icon-huanqi-s.png")
 		} else if($(this).find("input").val() == "换气") {
 			//切换到节能
 			$(this).find("img").attr("src", "img/icon-jieneng.png");
 			$(this).find("input").val("节能");
 			$(".moshi-img").attr("src", "img/icon-jieneng-s.png");
 			$("#moshi").html("节能");
-			$("#snow").find("img").attr("src","img/icon-jieneng-s.png")
+			$("#snow").find("img").attr("src", "img/icon-jieneng-s.png")
 		} else if($(this).find("input").val() == "节能") {
 			//切换到制冷
 			$(this).find("img").attr("src", "img/icon-zhileng.png");
 			$(this).find("input").val("制冷");
 			$(".moshi-img").attr("src", "img/icon-zhileng-s.png");
 			$("#moshi").html("制冷");
-			$("#snow").find("img").attr("src","img/icon-zhileng-s.png")
+			$("#snow").find("img").attr("src", "img/icon-zhileng-s.png")
 		}
 	})
 	//空调风速
