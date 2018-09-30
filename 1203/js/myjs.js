@@ -7,7 +7,7 @@ $(document).ready(function() {
 	})
 	//离开
 	$(".likai").click(function() {
-		$("dl").css("display","none");
+		$("dl").css("display", "none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//投影仪关
@@ -24,7 +24,7 @@ $(document).ready(function() {
 	})
 	//会客
 	$(".huike").click(function() {
-		$("dl").css("display","none");
+		$("dl").css("display", "none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//模态框
@@ -45,7 +45,7 @@ $(document).ready(function() {
 	})
 	//会议
 	$(".huiyi").click(function() {
-		$("dl").css("display","none");
+		$("dl").css("display", "none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//投影仪关
@@ -62,7 +62,7 @@ $(document).ready(function() {
 	})
 	//投影
 	$(".touying").click(function() {
-		$("dl").css("display","none");
+		$("dl").css("display", "none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//投影仪开
@@ -80,7 +80,7 @@ $(document).ready(function() {
 	})
 	//娱乐
 	$(".yule").click(function() {
-		$("dl").css("display","none");
+		$("dl").css("display", "none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//投影仪开
@@ -98,55 +98,107 @@ $(document).ready(function() {
 	})
 	//灯
 	$(".btn-light").click(function() {
-		$("dl").css("display","none");
-		$(this).find("dl").css("display","block");
+		$("dl").css("display", "none");
+		$(this).find("dl").css("display", "block");
 	})
 	//灯全开
-	$(".btn-light").find(".all-on").click(function () {
+	$(".btn-light").find(".all-on").click(function() {
 		lighton1($(".light1 .light"));
 		lighton2($(".light2 .light"));
 	})
 	//灯全关
-	$(".btn-light").find(".all-off").click(function () {
+	$(".btn-light").find(".all-off").click(function() {
 		lightoff1($(".light1 .light"));
 		lightoff2($(".light2 .light"));
 	})
 	//灯单控
-	$(".btn-light").find(".one-control").click(function () {
+	$(".btn-light").find(".one-control").click(function() {
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "none");
 		$(".light").css("display", "block");
 	})
 	//窗帘
 	$(".btn-curtain").click(function() {
-		$("dl").css("display","none");
-		$(this).find("dl").css("display","block");
+		$("dl").css("display", "none");
+		$(this).find("dl").css("display", "block");
 	})
+
+	//取最大值function
+	function max() {
+		var arr = [];
+		$(".curtain").each(function() {
+			arr.push($(this).find("input").val());
+		})
+		var max = Math.max.apply(null, arr);
+		return max;
+	}
+	//取最小值function
+	function min() {
+		var arr = [];
+		$(".curtain").each(function() {
+			arr.push($(this).find("input").val());
+		})
+		var min = Math.min.apply(null, arr);
+		return min;
+	}
 	//窗帘全开
-	$(".btn-curtain").find(".all-on").click(function () {
+	$(".btn-curtain").find(".all-on").click(function() {
 		var t1;
-		$(".zhezhao0").css("display","block");
-		$(".popup0").css("display","block");
+		$(".zhezhao0").css("display", "block");
+		$(".popup0").css("display", "block");
 		$(".popup0 h3").text("窗帘全开");
-		var curtain = $(this);
-		var ca = curtain.find("input").val();
-		ca = parseInt(ca);
+		min();
+		var ca = min();
 		//百分比
-		$(".popup1").eq(index).find(".kuang").html(ca + "%");
+		$(".popup0").find(".kuang").html(ca + "%");
 		//进度条
-		$(".popup1").eq(index).find(".progress-bar").css("width", ca / 100 * 400 + "px");
+		$(".popup0").find(".progress-bar").css("width", ca / 100 * 400 + "px");
 		//窗帘
-		$(".popup1").eq(index).find(".icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
+		$(".popup0").find(".icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
 		//按钮
-		if(ca == 0) {
-			$(".popup1").eq(index).find(".c-btn-off").addClass("button");
-		} else if(ca == 100) {
-			$(".popup1").eq(index).find(".c-btn-on").addClass("button");
+		$(".popup0").find(".c-btn-on").addClass("button");
+		$(".popup0").find(".c-btn-on")[0].disabled = true;
+		$(".popup0").find(".c-btn-stop").removeClass("button");
+		$(".popup0").find(".c-btn-stop")[0].disabled = false;
+		$(".popup0").find(".c-btn-off").removeClass("button");
+		$(".popup0").find(".c-btn-off")[0].disabled = false;
+		if(ca == 100) {
+
 		} else {
-			$(".popup1").eq(index).find(".c-btn-stop").addClass("button");
+			if(t1) {
+				clearInterval(t1);
+			}
+			//该按钮禁用，其他按钮启用
+			$(".popup0").find(".c-btn-stop")[0].disabled = false;
+			$(".popup0").find(".c-btn-off")[0].disabled = false;
+			$(this)[0].disabled = true;
+			$(this).siblings("button").removeClass("button");
+			$(this).addClass("button");
+			//
+			var cb = $(".popup0").find(".progress-bar").css("width");
+			cb = parseInt(cb);
+			//循环执行，每隔100ms执行一次  
+			t1 = setInterval(refreshCount1, 100);
+
+			function refreshCount1() {
+				if(ca == 100) {
+					clearInterval(t1);
+				} else {
+					cb = cb + 4;
+					//进度条
+					$(".popup0").find(".progress-bar").css("width", cb + "px");
+					ca = ca + 1;
+					//百分比 
+					$(".popup0").find(".kuang").html(ca + "%");
+					//窗帘
+					$(".popup0").find(".icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
+				}
+				return ca;
+			}
 		}
 		//开
 		$(".popup0").find(".c-btn-on").click(function() {
+			$(".popup0 h3").text("窗帘全开");
 			if(t1) {
 				clearInterval(t1);
 			}
@@ -180,6 +232,7 @@ $(document).ready(function() {
 		})
 		//关
 		$(".popup0").find(".c-btn-off").click(function() {
+			$(".popup0 h3").text("窗帘全关");
 			if(t1) {
 				clearInterval(t1);
 			}
@@ -189,7 +242,7 @@ $(document).ready(function() {
 			$(this)[0].disabled = true;
 			$(this).siblings("button").removeClass("button");
 			$(this).addClass("button");
-			var cb = $(".popup1").eq(index).find(".progress-bar").css("width");
+			var cb = $(".popup0").find(".progress-bar").css("width");
 			cb = parseInt(cb);
 			//循环执行，每隔100ms执行一次 
 			t1 = setInterval(refreshCount2, 100);
@@ -234,35 +287,195 @@ $(document).ready(function() {
 				//窗帘
 				$(".popup0 .icon-curtain img").css("height", (1 - 0 / 100) * 60 + "px");
 				//
-				$(".curtain").eq(index).find("input").val(ca);
+				$(".curtain").find("input").val(ca);
 				if(ca == 0) {
-					curtainoff($(".curtain").eq(index));
+					curtainoff($(".curtain"));
 				}
 				if(ca > 0 && ca < 100) {
-					curtainstop($(".curtain").eq(index));
+					curtainstop($(".curtain"));
 				}
 				if(ca == 100) {
-					curtainon($(".curtain").eq(index));
+					curtainon($(".curtain"));
 				}
 			}
 		});
 	})
 	//窗帘全关
-	$(".btn-curtain").find(".all-off").click(function () {
-		$(".zhezhao0").css("display","block");
-		$(".popup0").css("display","block");
+	$(".btn-curtain").find(".all-off").click(function() {
+		var t1;
+		$(".zhezhao0").css("display", "block");
+		$(".popup0").css("display", "block");
 		$(".popup0 h3").text("窗帘全关");
+		min();
+		ca = max();
+		//百分比
+		$(".popup0").find(".kuang").html(ca + "%");
+		//进度条
+		$(".popup0").find(".progress-bar").css("width", ca / 100 * 400 + "px");
+		//窗帘
+		$(".popup0").find(".icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
+		//按钮
+		$(".popup0").find(".c-btn-off").addClass("button");
+		$(".popup0").find(".c-btn-off")[0].disabled = true;
+		$(".popup0").find(".c-btn-stop").removeClass("button");
+		$(".popup0").find(".c-btn-stop")[0].disabled = false;
+		$(".popup0").find(".c-btn-on").removeClass("button");
+		$(".popup0").find(".c-btn-on")[0].disabled = false;
+		if(ca == 0) {
+
+		} else {
+			if(t1) {
+				clearInterval(t1);
+			}
+			//该按钮禁用，其他按钮启用
+			$(".popup0").find(".c-btn-on")[0].disabled = false;
+			$(".popup0").find(".c-btn-stop")[0].disabled = false;
+			$(this)[0].disabled = true;
+			$(this).siblings("button").removeClass("button");
+			$(this).addClass("button");
+			var cb = $(".popup0").find(".progress-bar").css("width");
+			cb = parseInt(cb);
+			//循环执行，每隔100ms执行一次 
+			t1 = setInterval(refreshCount2, 100);
+
+			function refreshCount2() {
+				if(ca == 0) {
+					clearInterval(t1);
+				} else {
+					cb = cb - 4;
+					//进度条
+					$(".popup0").find(".progress-bar").css("width", cb + "px");
+					ca = ca - 1;
+					//百分比 
+					$(".popup0").find(".kuang").html(ca + "%");
+					//窗帘
+					$(".popup0").find(".icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
+				}
+				return ca;
+			}
+		}
+		//开
+		$(".popup0").find(".c-btn-on").click(function() {
+			$(".popup0 h3").text("窗帘全开");
+			if(t1) {
+				clearInterval(t1);
+			}
+			//该按钮禁用，其他按钮启用
+			$(".popup0").find(".c-btn-stop")[0].disabled = false;
+			$(".popup0").find(".c-btn-off")[0].disabled = false;
+			$(this)[0].disabled = true;
+			$(this).siblings("button").removeClass("button");
+			$(this).addClass("button");
+			//
+			var cb = $(".popup0").find(".progress-bar").css("width");
+			cb = parseInt(cb);
+			//循环执行，每隔100ms执行一次  
+			t1 = setInterval(refreshCount1, 100);
+
+			function refreshCount1() {
+				if(ca == 100) {
+					clearInterval(t1);
+				} else {
+					cb = cb + 4;
+					//进度条
+					$(".popup0").find(".progress-bar").css("width", cb + "px");
+					ca = ca + 1;
+					//百分比 
+					$(".popup0").find(".kuang").html(ca + "%");
+					//窗帘
+					$(".popup0").find(".icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
+				}
+				return ca;
+			}
+		})
+		//关
+		$(".popup0").find(".c-btn-off").click(function() {
+			$(".popup0 h3").text("窗帘全关");
+			if(t1) {
+				clearInterval(t1);
+			}
+			//该按钮禁用，其他按钮启用
+			$(".popup0").find(".c-btn-on")[0].disabled = false;
+			$(".popup0").find(".c-btn-stop")[0].disabled = false;
+			$(this)[0].disabled = true;
+			$(this).siblings("button").removeClass("button");
+			$(this).addClass("button");
+			var cb = $(".popup0").find(".progress-bar").css("width");
+			cb = parseInt(cb);
+			//循环执行，每隔100ms执行一次 
+			t1 = setInterval(refreshCount2, 100);
+
+			function refreshCount2() {
+				if(ca == 0) {
+					clearInterval(t1);
+				} else {
+					cb = cb - 4;
+					//进度条
+					$(".popup0").find(".progress-bar").css("width", cb + "px");
+					ca = ca - 1;
+					//百分比 
+					$(".popup0").find(".kuang").html(ca + "%");
+					//窗帘
+					$(".popup0").find(".icon-curtain img").css("height", (1 - ca / 100) * 60 + "px");
+				}
+				return ca;
+			}
+		})
+		//暂停
+		$(".popup0").find(".c-btn-stop").click(function() {
+			clearInterval(t1);
+			//该按钮禁用，其他按钮启用
+			$(".popup0").find(".c-btn-on")[0].disabled = false;
+			$(".popup0").find(".c-btn-off")[0].disabled = false;
+			$(this)[0].disabled = true;
+			$(this).siblings("button").removeClass("button");
+			$(this).addClass("button");
+		})
+		//点击空白处关闭
+		$(".zhezhao0").mouseup(function(e) {
+			var pop1 = $(this).find('.popup0');
+			if(!pop1.is(e.target) && pop1.has(e.target).length === 0) {
+				// 可以在这里关闭弹窗
+				$(".zhezhao0").css("display", "none");
+				$(".popup0").css("display", "none");
+				//百分比
+				$(".kuang").html(0 + "%");
+				//进度条
+				$(".progress-bar").css("width", 0 / 100 * 400 + "px");
+				//窗帘
+				$(".popup0 .icon-curtain img").css("height", (1 - 0 / 100) * 60 + "px");
+				//
+				$(".curtain").find("input").val(ca);
+				if(ca == 0) {
+					curtainoff($(".curtain"));
+				}
+				if(ca > 0 && ca < 100) {
+					curtainstop($(".curtain"));
+				}
+				if(ca == 100) {
+					curtainon($(".curtain"));
+				}
+			}
+		});
 	})
 	//窗帘单控
-	$(".btn-curtain").find(".one-control").click(function () {
+	$(".btn-curtain").find(".one-control").click(function() {
 		$(".light-box").css("display", "none");
 		$(".switch").css("display", "none");
 		$(".curtain").css("display", "block");
 	})
+	//点击空白处关闭
+	$(".left").mouseup(function(e) {
+		var pop1 = $(this).find('dl');
+		if(!pop1.is(e.target) && pop1.has(e.target).length === 0) {
+			// 可以在这里关闭弹窗
+			$("dl").css("display", "none");
+		}
+	});
 	//灯、窗帘选项
-	$("dl dd").click(function () {
-		$("dl dd").find("h3").css("color","#FFFFFF")
-		$(this).find("h3").css("color","#f4b81d")
+	$("dl dd").click(function() {
+		$("dl dd").find("h3").css("color", "#FFFFFF")
+		$(this).find("h3").css("color", "#f4b81d")
 	})
 	//上下按钮
 	$(".more-top").click(function() {
@@ -427,7 +640,7 @@ $(document).ready(function() {
 	function projectoron(projector) {
 		projector.removeClass("projector-off");
 		projector.addClass("projector-on");
-		projector.find("img").css("display","block");
+		projector.find("img").css("display", "block");
 		projector.find("input").val("on");
 
 	}
@@ -435,7 +648,7 @@ $(document).ready(function() {
 	function projectoroff(projector) {
 		projector.removeClass("projector-on");
 		projector.addClass("projector-off");
-		projector.find("img").css("display","none");
+		projector.find("img").css("display", "none");
 		projector.find("input").val("off");
 
 	}
@@ -607,7 +820,7 @@ $(document).ready(function() {
 	})
 	//点击空调开关
 	$(".btn-kongtiao").click(function() {
-		$("dl").css("display","none");
+		$("dl").css("display", "none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		$(".zhezhao2").css("display", "block");
@@ -669,7 +882,7 @@ $(document).ready(function() {
 		if($(this).find("input").val() == "off") {
 			//关→开
 			$(this).siblings("h1").html("开");
-			$(this).find("img").attr("src","img/icon-power-on.png")
+			$(this).find("img").attr("src", "img/icon-power-on.png")
 			$(this).find("input").val("on");
 			$(".icon-btn").each(function() {
 				this.disabled = false;
@@ -678,7 +891,7 @@ $(document).ready(function() {
 		} else {
 			//开→关
 			$(this).siblings("h1").html("关");
-			$(this).find("img").attr("src","img/icon-power-off.png")
+			$(this).find("img").attr("src", "img/icon-power-off.png")
 			$(this).find("input").val("off");
 			$(".icon-btn").each(function() {
 				this.disabled = true;

@@ -123,6 +123,7 @@ li {
 .left .menu li .icon-img {
 	width: .40rem;
 }
+
 .left .menu li .icon-zhizhen {
 	z-index: -1;
 	position: absolute;
@@ -131,6 +132,7 @@ li {
 	left: 0;
 	opacity: 0;
 }
+
 .left .menu li i {
 	display: block;
 	width: .15rem;
@@ -139,7 +141,7 @@ li {
 	margin-top: .09rem;
 }
 
-.left .menu li dl{
+.left .menu li dl {
 	position: absolute;
 	width: 1.6rem;
 	top: 0;
@@ -150,14 +152,17 @@ li {
 	-webkit-box-shadow: 0rem 0rem .10rem #4A4A4A;
 	box-shadow: 0rem 0rem .10rem #4A4A4A;
 }
-.left .menu li dl dd{
+
+.left .menu li dl dd {
 	padding: .1rem;
 	border-bottom: 1px solid #FFFFFF;
 }
-.left .menu li dl dd img{
+
+.left .menu li dl dd img {
 	width: .40rem;
 }
-.left .menu li dl dd h3{
+
+.left .menu li dl dd h3 {
 	line-height: .4rem;
 	padding-left: .1rem;
 	color: #FFFFFF;
@@ -171,9 +176,11 @@ li {
 	-webkit-box-shadow: 0px -2px 0px #828282;
 	box-shadow: 0px -2px 0px #828282;
 }
-.left .more-top img{
+
+.left .more-top img {
 	opacity: 0;
 }
+
 .left .more-btm {
 	text-align: center;
 	padding-top: .15rem;
@@ -247,7 +254,7 @@ li {
 	height: .64rem;
 }
 
-.projector img{
+.projector img {
 	position: absolute;
 	top: -1.8rem;
 	right: .68rem;
@@ -306,17 +313,8 @@ li {
 
 /*弹窗*/
 
-.zhezhao1 {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 9;
-	background-color: rgba(0, 0, 0, 0.3);
-	display: none;
-}
-
+.zhezhao0,
+.zhezhao1,
 .zhezhao2 {
 	position: fixed;
 	top: 0;
@@ -331,6 +329,7 @@ li {
 
 /*窗帘弹窗*/
 
+.popup0,
 .popup1 {
 	position: fixed;
 	top: 50%;
@@ -344,6 +343,7 @@ li {
 	display: none;
 }
 
+.popup0 .icon-curtain,
 .popup1 .icon-curtain {
 	width: 100px;
 	height: 100px;
@@ -355,6 +355,7 @@ li {
 	background-size: cover;
 }
 
+.popup0 .icon-curtain img,
 .popup1 .icon-curtain img {
 	width: 53px;
 	height: 60px;
@@ -362,6 +363,20 @@ li {
 	top: 20px;
 	left: 50%;
 	margin-left: -25px;
+}
+
+.popup0 .progress {
+	width: 400px;
+	margin: 120px auto 0;
+	height: 10px;
+	background-color: #3b5daa;
+	border-radius: 10px;
+	overflow: visible;
+}
+
+.popup0 h3 {
+	text-align: center;
+	margin-top: 50px;
 }
 
 .popup1 .progress {
@@ -373,12 +388,14 @@ li {
 	overflow: visible;
 }
 
+.popup0 .progress .progress-bar,
 .popup1 .progress .progress-bar {
 	width: 0%;
 	background-color: #a3a8d4;
 	border-radius: 10px;
 }
 
+.popup0 .progress .progress-bar .dian,
 .popup1 .progress .progress-bar .dian {
 	position: absolute;
 	width: 20px;
@@ -389,6 +406,7 @@ li {
 	background-color: #3b5daa;
 }
 
+.popup0 .progress .progress-bar .kuang,
 .popup1 .progress .progress-bar .kuang {
 	position: absolute;
 	width: 82px;
@@ -403,6 +421,7 @@ li {
 	background-size: cover;
 }
 
+.popup0 .bottom,
 .popup1 .bottom {
 	position: absolute;
 	width: 100%;
@@ -411,6 +430,7 @@ li {
 	left: 0;
 }
 
+.popup0 .bottom button,
 .popup1 .bottom button {
 	width: 33.333333%;
 	line-height: 50px;
@@ -423,10 +443,12 @@ li {
 	border-left: 1px solid #FFFFFF;
 }
 
+.popup0 .bottom button:first-child,
 .popup1 .bottom button:first-child {
 	border: none;
 }
 
+.popup0 .bottom .button,
 .popup1 .bottom .button {
 	background-color: #2F456D;
 }
