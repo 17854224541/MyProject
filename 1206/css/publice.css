@@ -74,7 +74,7 @@ li {
 }
 
 .left .menu {
-	width: 1.74rem;
+	width: 3.3rem;
 	height: 5.65rem;
 	overflow: hidden;
 	position: relative;
@@ -89,7 +89,7 @@ li {
 }
 
 .left .menu ul li {
-	padding: .15rem .20rem;
+	padding: .13rem .20rem;
 	position: relative;
 }
 
@@ -126,7 +126,8 @@ li {
 .left .menu li .icon-zhizhen {
 	z-index: -1;
 	position: absolute;
-	top: .02rem;
+	width: 1.74rem;
+	top: 0;
 	left: 0;
 	opacity: 0;
 }
@@ -136,6 +137,30 @@ li {
 	height: .19rem;
 	background: url(../img/icon-r.png) no-repeat;
 	margin-top: .09rem;
+}
+
+.left .menu li dl{
+	position: absolute;
+	width: 1.6rem;
+	top: 0;
+	left: 1.64rem;
+	display: none;
+	background-color: #353b4d;
+	-moz-box-shadow: 0rem 0rem .10rem #4A4A4A;
+	-webkit-box-shadow: 0rem 0rem .10rem #4A4A4A;
+	box-shadow: 0rem 0rem .10rem #4A4A4A;
+}
+.left .menu li dl dd{
+	padding: .1rem;
+	border-bottom: 1px solid #FFFFFF;
+}
+.left .menu li dl dd img{
+	width: .40rem;
+}
+.left .menu li dl dd h3{
+	line-height: .4rem;
+	padding-left: .1rem;
+	color: #FFFFFF;
 }
 
 .left .more-top {
@@ -220,6 +245,13 @@ li {
 	position: absolute;
 	width: .64rem;
 	height: .64rem;
+}
+
+.projector img{
+	position: absolute;
+	top: -1.8rem;
+	right: .68rem;
+	display: none;
 }
 
 .projector-off {
@@ -448,9 +480,15 @@ li {
 	display: block;
 }
 
-.popup2 .t-box h1 img {
-	margin-left: .40rem;
-	width: 0.4rem;
+.popup2 .t-box h1 .moshi-img {
+	margin-left: .50rem;
+	margin-top: .12rem;
+	width: 0.26rem;
+}
+
+.popup2 .t-box h1 .fengsu-img {
+	margin-top: .12rem;
+	width: 0.38rem;
 }
 
 .popup2 .t-box .snow {

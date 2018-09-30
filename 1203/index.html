@@ -36,6 +36,7 @@
 				<div class="menu">
 					<ul>
 						<div class="title">模式</div>
+						<img class="line" src="img/line.png"/>
 						<li class="clearfix likai">
 							<img class="fl icon-img" src="img/icon-likai.png" />
 							<h2 class="fl">离开</h2>
@@ -67,6 +68,7 @@
 							<img class="icon-zhizhen" src="img/bg-zhizhen.png"/>
 						</li>
 						<div class="title">设备</div>
+						<img class="line" src="img/line.png"/>
 						<li class="clearfix btn-kongtiao">
 							<img class="fl icon-img" src="img/icon-kongtiao1.png" />
 							<h3 class="fl">空调</h3>
@@ -74,16 +76,44 @@
 							<img class="icon-zhizhen" src="img/bg-zhizhen.png"/>
 						</li>
 						<li class="clearfix btn-light">
-							<img class="fl icon-img" src="img/icon-light1-on.png" />
-							<h3 class="fl">灯</h3>
+							<img class="fl icon-img" src="img/icon-light2-on.png" />
+							<h3 class="fl">照明</h3>
 							<i class="fr"></i>
 							<img class="icon-zhizhen" src="img/bg-zhizhen.png"/>
+							<dl>
+								<dd class="clearfix all-on">
+									<img class="fl" src="img/icon-light2-on.png"/>
+									<h3 class="fl">照明全开</h3>
+								</dd>
+								<dd class="clearfix all-off">
+									<img class="fl" src="img/icon-light2-off.png"/>
+									<h3 class="fl">照明全关</h3>
+								</dd>
+								<dd class="clearfix one-control">
+									<img class="fl" src="img/icon-curtain-dankong.png"/>
+									<h3 class="fl">照明单控</h3>
+								</dd>
+							</dl>
 						</li>
 						<li class="clearfix btn-curtain">
 							<img class="fl icon-img" src="img/icon-curtain-on.png" />
 							<h3 class="fl">窗帘</h3>
 							<i class="fr"></i>
 							<img class="icon-zhizhen" src="img/bg-zhizhen.png"/>
+							<dl>
+								<dd class="clearfix all-on">
+									<img class="fl" src="img/icon-curtain-on.png"/>
+									<h3 class="fl">窗帘全开</h3>
+								</dd>
+								<dd class="clearfix all-off">
+									<img class="fl" src="img/icon-curtain-off.png"/>
+									<h3 class="fl">窗帘全关</h3>
+								</dd>
+								<dd class="clearfix one-control">
+									<img class="fl" src="img/icon-curtain-dankong.png"/>
+									<h3 class="fl">窗帘单控</h3>
+								</dd>
+							</dl>
 						</li>
 					</ul>
 				</div>
@@ -112,6 +142,8 @@
 						<div class="switch light light-14 light-off"><input type="hidden" name="" id="" value="off" /></div>
 						<div class="switch light light-15 light-off"><input type="hidden" name="" id="" value="off" /></div>
 						<div class="switch light light-16 light-off"><input type="hidden" name="" id="" value="off" /></div>
+						<div class="switch light light-17 light-off"><input type="hidden" name="" id="" value="off" /></div>
+						<div class="switch light light-18 light-off"><input type="hidden" name="" id="" value="off" /></div>
 					</div>
 					<div class="light-box light2 part-2">
 						<div class="switch light light-1 light-off"><input type="hidden" name="" id="" value="off" /></div>
@@ -128,6 +160,7 @@
 					<!--投影仪-->
 					<div class="switch projector projector-off">
 						<input type="hidden" name="" id="" value="off" />
+						<img src="img/guang.png"/>
 					</div>
 					<div class="motaikuang"></div>
 					<!--窗帘-->
@@ -152,6 +185,25 @@
 				</div>
 			</div>
 			<!--窗帘弹窗-->
+			<div class="zhezhao0">
+				<div class="popup0">
+					<div class="icon-curtain relative">
+						<img class="" src="img/icon-lian.png" />
+					</div>
+					<h3>窗帘全开</h3>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success relative" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+							<div class="dian"></div>
+							<div class="kuang">0%</div>
+						</div>
+					</div>
+					<div class="bottom clearfix">
+						<button class="fl c-btn c-btn-on">开</button>
+						<button class="fl c-btn c-btn-stop">暂停</button>
+						<button class="fl c-btn c-btn-off">关</button>
+					</div>
+				</div>
+			</div>
 			<div class="zhezhao1">
 				<div class="popup1">
 					<div class="icon-curtain relative">
@@ -260,6 +312,7 @@
 							<div class="fl">
 								<i class="danwei">℃</i>
 								<img class="moshi-img" src="img/icon-zhileng-s.png"/>
+								<img class="fengsu-img" src="img/icon-fengsu-dafeng-s.png"/>
 							</div>
 						</h1>
 						<div class="snow" id="snow">
@@ -320,7 +373,7 @@
 						<ul class="clearfix">
 							<li class="fl">
 								<button class="icon-btn a-btn-power">
-									<img src="img/icon-power.png" />
+									<img src="img/icon-power-on.png" />
 									<input type="hidden" value="on" />
 								</button>
 								<h1>开</h1>

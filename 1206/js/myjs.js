@@ -7,6 +7,7 @@ $(document).ready(function() {
 	})
 	//离开
 	$(".likai").click(function() {
+		$("dl").css("display","none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//投影仪关
@@ -23,6 +24,7 @@ $(document).ready(function() {
 	})
 	//会客
 	$(".huike").click(function() {
+		$("dl").css("display","none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//投影仪关
@@ -39,6 +41,7 @@ $(document).ready(function() {
 	})
 	//会议
 	$(".huiyi").click(function() {
+		$("dl").css("display","none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//投影仪关
@@ -56,6 +59,7 @@ $(document).ready(function() {
 	})
 	//投影
 	$(".touying").click(function() {
+		$("dl").css("display","none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//投影仪开
@@ -63,8 +67,8 @@ $(document).ready(function() {
 		//灯
 		lightoff1($(".light1 .light"));
 		lightoff2($(".light2 .light"))
-		lighton2($(".part-5 .light"))
-		lighton2($(".part-6 .light"))
+		lighton2($(".part-7 .light"))
+		lighton2($(".part-8 .light"))
 		//窗帘关
 		curtainoff($(".curtain"));
 		//模态框
@@ -74,6 +78,7 @@ $(document).ready(function() {
 	})
 	//娱乐
 	$(".yule").click(function() {
+		$("dl").css("display","none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		//投影仪开
@@ -81,8 +86,8 @@ $(document).ready(function() {
 		//灯
 		lightoff1($(".light1 .light"));
 		lightoff2($(".light2 .light"))
-		lighton2($(".part-5 .light"))
-		lighton2($(".part-6 .light"))
+		lighton2($(".part-7 .light"))
+		lighton2($(".part-8 .light"))
 		//窗帘关
 		curtainoff($(".curtain"));
 		//模态框
@@ -92,23 +97,50 @@ $(document).ready(function() {
 	})
 	//灯
 	$(".btn-light").click(function() {
+		$("dl").css("display","none");
+		$(this).find("dl").css("display","block");
+	})
+	//灯全开
+	$(".btn-light").find(".all-on").click(function () {
+		lighton1($(".light1 .light"));
+		lighton2($(".light2 .light"));
+	})
+	//灯全关
+	$(".btn-light").find(".all-off").click(function () {
+		lightoff1($(".light1 .light"));
+		lightoff2($(".light2 .light"));
+	})
+	//灯单控
+	$(".btn-light").find(".one-control").click(function () {
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "none");
 		$(".light").css("display", "block");
-		//模态框
-		$(".motaikuang").stop().show(200);
-		$(".motaikuang").html("点击设备控制开关");
-		$(".motaikuang").delay(1500).hide(200);
 	})
 	//窗帘
 	$(".btn-curtain").click(function() {
+		$("dl").css("display","none");
+		$(this).find("dl").css("display","block");
+	})
+	//窗帘全开
+	$(".btn-curtain").find(".all-on").click(function () {
+		lighton1($(".light1 .light"));
+		lighton2($(".light2 .light"));
+	})
+	//窗帘全关
+	$(".btn-curtain").find(".all-off").click(function () {
+		lightoff1($(".light1 .light"));
+		lightoff2($(".light2 .light"));
+	})
+	//窗帘单控
+	$(".btn-curtain").find(".one-control").click(function () {
 		$(".light-box").css("display", "none");
 		$(".switch").css("display", "none");
 		$(".curtain").css("display", "block");
-		//模态框
-		$(".motaikuang").stop().show(200);
-		$(".motaikuang").html("点击设备控制开关");
-		$(".motaikuang").delay(1500).hide(200);
+	})
+	//灯、窗帘选项
+	$("dl dd").click(function () {
+		$("dl dd").find("h3").css("color","#FFFFFF")
+		$(this).find("h3").css("color","#f4b81d")
 	})
 	//上下按钮
 	$(".more-top").click(function() {
@@ -120,7 +152,7 @@ $(document).ready(function() {
 	})
 	$(".more-btm").click(function() {
 		$(".menu ul").animate({
-			"top": "-20%"
+			"top": "-64%"
 		}, 200);
 		$(".more-top img").css("opacity", "1");
 		$(".more-btm img").css("opacity", "0");
@@ -325,12 +357,14 @@ $(document).ready(function() {
 	function projectoron(projector) {
 		projector.removeClass("projector-off");
 		projector.addClass("projector-on");
+		projector.find("img").css("display","block");
 		projector.find("input").val("on");
 	}
 	//投影仪关function
 	function projectoroff(projector) {
 		projector.removeClass("projector-on");
 		projector.addClass("projector-off");
+		projector.find("img").css("display","none");
 		projector.find("input").val("off");
 	}
 	//投影仪开关function
@@ -500,6 +534,7 @@ $(document).ready(function() {
 	})
 	//点击空调开关
 	$(".btn-kongtiao").click(function() {
+		$("dl").css("display","none");
 		$(".light-box").css("display", "block");
 		$(".switch").css("display", "block");
 		$(".zhezhao2").css("display", "block");
@@ -560,16 +595,18 @@ $(document).ready(function() {
 	$(".a-btn-power").click(function() {
 		if($(this).find("input").val() == "off") {
 			//关→开
-			$(this).siblings("h1").html("开")
-			$(this).find("input").val("on")
+			$(this).siblings("h1").html("开");
+			$(this).find("img").attr("src","img/icon-power-on.png");
+			$(this).find("input").val("on");
 			$(".icon-btn").each(function() {
 				this.disabled = false;
 				this.style.opacity = 1;
 			})
 		} else {
 			//开→关
-			$(this).siblings("h1").html("关")
-			$(this).find("input").val("off")
+			$(this).siblings("h1").html("关");
+			$(this).find("img").attr("src","img/icon-power-off.png");
+			$(this).find("input").val("off");
 			$(".icon-btn").each(function() {
 				this.disabled = true;
 				this.style.opacity = 0.5;
@@ -624,16 +661,19 @@ $(document).ready(function() {
 			$(this).find("img").attr("src", "img/icon-fengsu-zhongfeng.png");
 			$(this).find("input").val("中风");
 			$(".fengsu-text").text("中风");
+			$(".fengsu-img").attr("src", "img/icon-fengsu-zhongfeng-s.png");
 		} else if($(this).find("input").val() == "中风") {
 			//切换到大风
 			$(this).find("img").attr("src", "img/icon-fengsu-dafeng.png");
 			$(this).find("input").val("大风");
 			$(".fengsu-text").text("大风");
+			$(".fengsu-img").attr("src", "img/icon-fengsu-dafeng-s.png");
 		} else if($(this).find("input").val() == "大风") {
 			//切换到小风
 			$(this).find("img").attr("src", "img/icon-fengsu-xiaofeng.png");
 			$(this).find("input").val("小风");
 			$(".fengsu-text").text("小风");
+			$(".fengsu-img").attr("src", "img/icon-fengsu-xiaofeng-s.png");
 		}
 	})
 })

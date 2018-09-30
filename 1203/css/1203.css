@@ -59,57 +59,66 @@
 }
 
 .part-1 .light-6 {
-	top: .78rem;
+	top: .49rem;
 	right: -.39rem;
 }
 
 .part-1 .light-7 {
-	top: 1.88rem;
+	top: 1.37rem;
 	right: -.39rem;
 }
 
 .part-1 .light-8 {
-	bottom: .78rem;
+	bottom: 1.37rem;
 	right: -.39rem;
 }
 
 .part-1 .light-9 {
-	bottom: -.39rem;
+	bottom: .49rem;
 	right: -.39rem;
 }
 
 .part-1 .light-10 {
 	bottom: -.39rem;
-	right: 1.19rem;
+	right: -.39rem;
 }
 
 .part-1 .light-11 {
 	bottom: -.39rem;
-	left: 2.70rem;
+	right: 1.19rem;
 }
 
 .part-1 .light-12 {
 	bottom: -.39rem;
-	left: 1.19rem;
+	left: 2.70rem;
 }
 
 .part-1 .light-13 {
 	bottom: -.39rem;
-	left: -.39rem;
+	left: 1.19rem;
 }
 
 .part-1 .light-14 {
-	bottom: .78rem;
+	bottom: -.39rem;
 	left: -.39rem;
 }
 
 .part-1 .light-15 {
-	top: 1.88rem;
+	bottom: .49rem;
 	left: -.39rem;
 }
 
 .part-1 .light-16 {
-	top: .78rem;
+	bottom: 1.37rem;
+	left: -.39rem;
+}
+.part-1 .light-17 {
+	top: 1.37rem;
+	left: -.39rem;
+}
+
+.part-1 .light-18 {
+	top: .49rem;
 	left: -.39rem;
 }
 
@@ -123,16 +132,6 @@
 	left: 2.10rem;
 }
 
-.part-2 .light-1 {
-	top: -.32rem;
-	left: -.34rem;
-}
-
-.part-2 .light-2 {
-	bottom: -.32rem;
-	left: -.32rem;
-}
-
 .part-3 {
 	position: absolute;
 	width: .32rem;
@@ -140,17 +139,7 @@
 	border-left-width: .04rem;
 	border-left-style: solid;
 	top: 2.00rem;
-	left: 4.10rem;
-}
-
-.part-3 .light-1 {
-	top: -.32rem;
-	left: -.34rem;
-}
-
-.part-3 .light-2 {
-	bottom: -.32rem;
-	left: -.32rem;
+	left: 3.30rem;
 }
 
 .part-4 {
@@ -163,12 +152,12 @@
 	right: 2.30rem;
 }
 
-.part-4 .light-1 {
+.light2 .light-1 {
 	top: -.32rem;
 	left: -.34rem;
 }
 
-.part-4 .light-2 {
+.light2 .light-2 {
 	bottom: -.32rem;
 	left: -.32rem;
 }
@@ -177,7 +166,7 @@
 
 .projector {
 	top: 2.64rem;
-	left: 2.8rem;
+	left: 4.4rem;
 }
 
 
@@ -185,30 +174,30 @@
 
 .curtain-1 {
 	top: 1.30rem;
-	right: -.30rem;
+	right: -.23rem;
 }
 
 .curtain-2 {
 	top: 2.94rem;
-	right: -.30rem;
+	right: -.23rem;
 }
 
 .curtain-3 {
 	bottom: -.25rem;
-	right: 1.34rem;
+	right: 1.38rem;
 }
 
 .curtain-4 {
 	bottom: -.25rem;
-	right: 3.07rem;
+	right: 3.11rem;
 }
 
 .curtain-5 {
 	bottom: -.25rem;
-	left: 2.77rem;
+	left: 2.75rem;
 }
 
 .curtain-6 {
 	bottom: -.25rem;
-	left: 1.03rem;
+	left: 1.01rem;
 }
