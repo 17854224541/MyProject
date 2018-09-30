@@ -98,9 +98,13 @@ li {
 	font-size: .19rem;
 	width: 1.64rem;
 	box-sizing: border-box;
-	padding: .05rem 0 .05rem 0.2rem;
-	border-bottom: 2px solid #363c4d;
+	padding: .05rem 0 0rem 0.2rem;
 }
+
+.left .menu ul .line {
+	width: 1.64rem;
+}
+
 
 .left .menu li h2 {
 	line-height: .40rem;
@@ -155,7 +159,7 @@ li {
 
 .left .menu li dl dd {
 	padding: .1rem;
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 .left .menu li dl dd img {
@@ -166,15 +170,16 @@ li {
 	line-height: .4rem;
 	padding-left: .1rem;
 	color: #FFFFFF;
+	font-weight: 300;
 }
 
 .left .more-top {
 	text-align: center;
 	padding-top: .15rem;
 	transform: rotateZ(180deg);
-	-moz-box-shadow: 0px -2px 0px #828282;
+	/*-moz-box-shadow: 0px -2px 0px #828282;
 	-webkit-box-shadow: 0px -2px 0px #828282;
-	box-shadow: 0px -2px 0px #828282;
+	box-shadow: 0px -2px 0px #828282;*/
 }
 
 .left .more-top img {
@@ -184,9 +189,9 @@ li {
 .left .more-btm {
 	text-align: center;
 	padding-top: .15rem;
-	-moz-box-shadow: 0px -2px 0px #828282;
+	/*-moz-box-shadow: 0px -2px 0px #828282;
 	-webkit-box-shadow: 0px -2px 0px #828282;
-	box-shadow: 0px -2px 0px #828282;
+	box-shadow: 0px -2px 0px #828282;*/
 }
 
 .left .more-top img,
@@ -244,7 +249,9 @@ li {
 	background: url(../img/icon-light2-on.png) no-repeat;
 	background-size: cover;
 }
-
+.light-box{
+	z-index: 2;
+}
 
 /*投影仪*/
 
@@ -252,13 +259,16 @@ li {
 	position: absolute;
 	width: .64rem;
 	height: .64rem;
+	z-index: 2;
 }
 
-.projector img {
+.projector-guang {
 	position: absolute;
-	top: -1.8rem;
-	right: .68rem;
+	width: 5.38rem;
+	top: 0.57rem;
+	left: 0.1rem;
 	display: none;
+	z-index: 1;
 }
 
 .projector-off {

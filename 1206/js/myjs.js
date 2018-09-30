@@ -485,7 +485,7 @@ $(document).ready(function() {
 	})
 	$(".more-btm").click(function() {
 		$(".menu ul").animate({
-			"top": "-64%"
+			"top": "-68%"
 		}, 200);
 		$(".more-top img").css("opacity", "1");
 		$(".more-btm img").css("opacity", "0");
@@ -690,14 +690,14 @@ $(document).ready(function() {
 	function projectoron(projector) {
 		projector.removeClass("projector-off");
 		projector.addClass("projector-on");
-		projector.find("img").css("display","block");
+		$(".projector-guang").css("display","block");
 		projector.find("input").val("on");
 	}
 	//投影仪关function
 	function projectoroff(projector) {
 		projector.removeClass("projector-on");
 		projector.addClass("projector-off");
-		projector.find("img").css("display","none");
+		$(".projector-guang").css("display","none");
 		projector.find("input").val("off");
 	}
 	//投影仪开关function

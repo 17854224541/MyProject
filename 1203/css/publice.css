@@ -106,7 +106,7 @@ li {
 	color: #FFFFFF;
 	font-size: .19rem;
 	box-sizing: border-box;
-	padding: .1rem 0 .05rem 0.25rem;
+	padding: .1rem 0 0rem 0.25rem;
 }
 
 .left .menu ul .line {
@@ -166,7 +166,7 @@ li {
 
 .left .menu li dl dd {
 	padding: .1rem;
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 .left .menu li dl dd img {
@@ -177,15 +177,16 @@ li {
 	line-height: .4rem;
 	padding-left: .1rem;
 	color: #FFFFFF;
+	font-weight: 300;
 }
 
 .left .more-top {
 	text-align: center;
 	transform: rotateZ(180deg);
 	padding-top: 0.1rem;
-	-moz-box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);
+	/*-moz-box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);*/
 }
 
 .left .more-top img {
@@ -201,9 +202,9 @@ li {
 .left .more-btm {
 	text-align: center;
 	padding-top: 0.1rem;
-	-moz-box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);
+	/*-moz-box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3);*/
 }
 
 .right {
@@ -265,7 +266,9 @@ li {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.light-box{
+	z-index: 2;
+}
 
 /*投影仪*/
 
@@ -273,13 +276,16 @@ li {
 	position: absolute;
 	width: .72rem;
 	height: .72rem;
+	z-index: 2;
 }
 
-.projector img {
+.projector-guang {
 	position: absolute;
-	top: -1.7rem;
-	right: .68rem;
+	width: 4.42rem;
+	top: 0.95rem;
+	left: .05rem;
 	display: none;
+	z-index: 1;
 }
 
 .projector-off {
