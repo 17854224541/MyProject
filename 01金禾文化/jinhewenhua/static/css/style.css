@@ -245,7 +245,7 @@ padding-top: 111px;
 }
 
 
-h2.header-text:before{
+/*h2.header-text:before{
 	content: "[";
 	position: relative;
 	right: 10px;
@@ -258,7 +258,7 @@ h2.header-text:after{
 	left: 10px;
 	font-size: 90px;
 	top: 5px;
-}
+}*/
 span.rotate{
 	transition:1s;
 }
