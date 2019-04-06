@@ -1608,24 +1608,37 @@ input {
 	padding: 60px 5px 0;
 }
 
-.heying #img1 {
-	border: 10px solid #cccccc;
-	border-radius: 5px;
-	margin-top: 40px;
-	width: 600px;
-	height: 400px;
+.heying #div1 {
+	position: relative;
+	width: 100%;
+	height: 225px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 5px solid #CCCCCC;
 }
 
-@media only screen and (max-width: 600px) {
-	.heying #img1 {
-		margin-top: 40px;
-		width: 100%;
-		height: 300px;
-	}
+.heying #div2 {
+	position: absolute;
 }
 
-.heying ul {
-	list-style: none;
+.heying li {
+	float: left;
+	list-style-type: none;
+	padding: 5px;
+}
+
+.heying img {
+	border: none;
+	width: 300px;
+	height: 225px;
+}
+
+.heying #div2 li a:hover {
+	top: -10px;
+}
+
+a {
+	position: relative;
 }
 
 .entertenment {
@@ -1668,4 +1681,48 @@ input {
 	.index-banner {
 		background-size: cover !important;
 	}
+}
+
+
+/*case*/
+
+.case-title {
+	padding: 10px;
+}
+
+.case-pic {
+	padding: 10px;
+	text-align: center;
+}
+
+.case-pic img {
+	width: 100%;
+	max-width: 800px;
+	margin: 20px;
+}
+
+.thelast {
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+.thenext {
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: right;
+	font-size: 18px;
+}
+
+.thelast span,
+.thenext span {
+	cursor: pointer;
+}
+
+.thelast span:hover {
+	color: #FFF21E;
+}
+
+.thenext span:hover {
+	color: #FFF21E;
 }
