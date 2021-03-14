@@ -6,10 +6,10 @@
     <div class="navbar">
       <el-row :gutter="32">
         <el-col :span="6">
-          <div class="menu menu1">
+          <router-link to="/login" tag="div" class="menu menu1">
             <h4>My Space</h4>
             <p>Login</p>
-          </div>
+          </router-link>
         </el-col>
         <el-col :span="6">
           <div class="menu menu2">

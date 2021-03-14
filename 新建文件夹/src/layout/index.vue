@@ -8,6 +8,10 @@
       </div>
       <!-- 页面主容器组件 -->
       <Main v-bind:device="device"></Main>
+      <!-- 底部导航 -->
+      <div class="fixed-header">
+        <Footer></Footer>
+      </div>
     </div>
     <a @click="scrollToTop()" class="scroll-to-top-content">
       <div>
@@ -21,7 +25,7 @@
 <script>
 
 import  Header  from './components/Header'
-// import  Footer  from './components/Footer'
+import  Footer  from './components/Footer'
 import  Main from './components/Main'
 import ResizeMixin from './mixin/ResizeHandler'
 
@@ -29,7 +33,7 @@ export default {
   name: 'MainLayout',
   components: {
     Header,
-    // Footer,
+    Footer,
     Main
   },
   mixins: [ResizeMixin],

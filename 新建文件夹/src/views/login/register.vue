@@ -1,9 +1,12 @@
 <template>
   <div>
     <div class="top">
-      <!-- <img src="../../images/home/top.jpg" alt=""> -->
+      <img src="../../images/home/top.jpg" alt="">
     </div>
     <div class="container">
+      <div class="tologin">
+        <router-link to="/login">已有账号，去登陆</router-link>
+      </div>
       <div class="title">
         <h1>会员账号注册</h1>
       </div>
@@ -88,6 +91,11 @@
                 </div>
                 <img src="../../images/icons/icon-duihao.png" alt="">
               </div>
+              <!-- 支付宝扫码 -->
+              <div class="erweima" v-if="payWay==1">
+                <img class="sanjiaoxing" src="../../images/icons/icon-sanjiaoxing.png" alt="">
+                <img src="../../images/icons/erweima.png" alt="">
+              </div>
             </el-col>
             <el-col :span="8">
               <div class="pay-way" :class="{'pay-way-1':payWay==2}" @click="Payway(2)">
@@ -95,6 +103,11 @@
                   微信支付
                 </div>
                 <img src="../../images/icons/icon-duihao.png" alt="">
+              </div>
+              <!-- 微信扫码 -->
+              <div class="erweima" v-if="payWay==2">
+                <img class="sanjiaoxing" src="../../images/icons/icon-sanjiaoxing.png" alt="">
+                <img src="../../images/icons/erweima.png" alt="">
               </div>
             </el-col>
             <el-col :span="8">
@@ -237,7 +250,7 @@
               area: '--- 区 ---',
           },
           // 支付
-          payWay:1,
+          payWay:0,
           // 银行
           bank:1,
         };
@@ -285,6 +298,10 @@
     padding: 20px;
     width: 1000px;
     margin: 0 auto;
+    .tologin{
+      text-align: right;
+      color: blue;
+    }
     .title{
       text-align: center;
       h1{
@@ -340,6 +357,21 @@
           padding-left: 65px;
           background: url(../../images/icons/icon-yinlian.png) no-repeat;
           background-size: contain;
+        }
+        .erweima{
+          text-align: center;
+          -moz-box-shadow:2px 2px 5px #333333;
+          -webkit-box-shadow:2px 2px 5px #333333;
+          box-shadow:2px 2px 5px #333333;
+          margin-top: 20px;
+          position: relative;
+          .sanjiaoxing{
+            position: absolute;
+            width: 20px;
+            margin-left: -10px;
+            left: 50%;
+            top: -15px;
+          }
         }
         .choose-bank{
           ul{

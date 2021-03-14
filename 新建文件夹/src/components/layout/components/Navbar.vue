@@ -77,7 +77,7 @@ export default {
 
     logout() {
       this.$store.dispatch('user/logout')
-      this.$router.push(`/login?redirect=${this.$route.fullPath}`);
+      this.$router.push(`/adminlogin?redirect=${this.$route.fullPath}`);
     },
 
     getBreadcrumb() {
